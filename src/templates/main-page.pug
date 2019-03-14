@@ -1,22 +1,30 @@
 ---
-title: Index Page
+title: Borsa
+bodyClass: bodyClass
+outClass: outClass
 ---
 extends layouts/_layout
 block content
 
+  //slider start
+  include pages/main-page/1-slider
+  
   // variable use example
-  h1!= title
+  //- h1!= title
 
   // partial example
-  include ./partials/_example
+  //- include ./partials/_example
 
   // mixin example
-  +icon('facebook')
+  //- +icon('facebook')
 
   // variable set example
-  - let list = ['text 1', 'text 2', 'text 3'];
+  //- - let list = ['text 1', 'text 2', 'text 3'];
 
   // loop example
-  ul  
-    for item in list
-      li= item
+  //- ul  
+  //-   for item in list
+  //-     li= item
+
+//- h1.slider
+//-   +hide-text
