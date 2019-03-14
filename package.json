@@ -10,7 +10,9 @@
     "lint-fix": "npm run lint -- --fix"
   },
   "lint-staged": {
-    "src/templates/**/*.html": [ "htmlhint --config .htmlhintrc" ]
+    "src/templates/**/*.html": [
+      "htmlhint --config .htmlhintrc"
+    ]
   },
   "authors": "Fyodor <fyodor.work@gmail.com>",
   "devDependencies": {
