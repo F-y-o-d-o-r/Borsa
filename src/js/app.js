@@ -5,4 +5,7 @@ import svg4everybody from 'svg4everybody';
 // sayHello();
 $(document).ready(function() {
   svg4everybody();
+  $('#nav-icon').click(function() {
+    $(this).toggleClass('open');
+  });
 });
