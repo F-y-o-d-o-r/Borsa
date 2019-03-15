@@ -7,5 +7,6 @@ $(document).ready(function() {
   svg4everybody();
   $('#nav-icon').click(function() {
     $(this).toggleClass('open');
+    $('.burger-menu-wrapper').toggleClass('open');
   });
 });

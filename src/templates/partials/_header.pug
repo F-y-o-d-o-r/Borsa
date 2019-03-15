@@ -1,4 +1,5 @@
 - let headermenu = ['О компании', 'Продукция', 'Производство', 'Новости', 'Контакты'];
+- let boorgermenu = [['О компании', true], ['Продукция', true], ['Производство', true], ['Доставка', true], ['Контроль качества', true], ['Новости'], ['Карьера'], ['Контакты'], ['Прайс-лист', 'price-list'], ['Карта сайта']];
 //BEGIN header
 header.header
   .header-wrapper.flex
@@ -18,4 +19,21 @@ header.header
             a(href="#", title="menu")= item
     a(href="tel: +74957674527", title="phone number").tel  +7 495 767 45 27
     button#leftOrder Оставить заявку
+//BEGIN Header burger menu
+.burger-menu-wrapper
+  .burger-content
+    .nav-wrapper
+      nav
+        ul.flex.left-part
+          for item in boorgermenu
+            if item[1] === true
+              li
+                a(href="#", title="menu" class= item[1])= item[0]
+        .line
+        ul.flex.right-part
+          for item in boorgermenu
+            if item[1] !== true
+              li
+                a(href="#", title="menu" class= item[1])= item[0]
+//END Header burger menu
 //END header

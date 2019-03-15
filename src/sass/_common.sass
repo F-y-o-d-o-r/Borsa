@@ -174,6 +174,73 @@ header.header
       font-size: 20px
       +r(768)
         font-size: 16px
+// Header burger menu
+.burger-menu-wrapper
+  background-color: #ffffff
+  position: fixed
+  left: 0
+  right: 0
+  top: -200%
+  bottom: 200%
+  overflow: auto
+  opacity: 0
+  +tr(all 0.5s ease-in-out)
+  .burger-content
+    +maw(460)
+    margin: 60px auto 90px
+    +r(500)
+      margin: 15px auto
+  .nav-wrapper
+    height: 380px
+    +r(500)
+      height: auto
+  nav
+    display: flex
+    justify-content: space-between
+    height: 100%
+    +r(500)
+      flex-direction: column
+    ul
+      max-width: 167px
+      flex-direction: column
+      +r(500)
+        +maw(227)
+        margin: 0 auto
+      li
+        margin: 30px 0
+        +r(500)
+          margin: 20px 0
+        a
+          text-transform: uppercase
+          font-family: bold
+          font-size: 13px
+          color: #000
+          +tr(0.5s color ease-in-out)
+          &:hover
+            color: $green1
+  .price-list
+    &:before
+      content: ' ';
+      background-image: url('../img/footer-pdf-black.svg')
+      height: 20px
+      width: 20px
+      background-size: 20px 20px
+      background-repeat: no-repeat
+      display: inline-block
+      margin-right: 20px
+      vertical-align: -5px
+  .line
+    width: 1px
+    height: 100%
+    background-color: #E1E1E1
+    +r(500)
+      display: none
+.burger-menu-wrapper.open
+  top: 109px
+  bottom: 0
+  opacity: 1
+  +r(650)
+    top: 71px
 /* ============================================================================
  * HEADER END
  * ============================================================================ */
@@ -218,7 +285,7 @@ footer.footer
     padding-left: 20px
     &:before
       content: ' ';
-      background-image: url('../img/footer-pdf.png')
+      background-image: url('../img/footer-pdf.svg')
       height: 20px
       width: 20px
       background-size: 20px 20px
