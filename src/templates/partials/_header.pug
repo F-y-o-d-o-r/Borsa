@@ -1,13 +1,15 @@
 - let headermenu = ['О компании', 'Продукция', 'Производство', 'Новости', 'Контакты'];
 //BEGIN header
-header.header.flex
-  .logo-wrapper.flex
-    img(src="img/header-logo.png", alt="header logo")
-    p Производство мягких контейнеров / биг бэг
-  ul.flex
-    for item in headermenu
-      li
-        a(href="#", title="menu")= item
-  a(href="tel: +74957674527", title="phone number").tel  +7 495 767 45 27
-  button#leftOrder Оставить заявку
+header.header
+  .header-wrapper.flex
+    .logo-wrapper.flex
+      img(src="img/header-logo.png", alt="header logo")
+      p Производство мягких контейнеров / биг бэг
+    nav
+      ul.flex
+        for item in headermenu
+          li
+            a(href="#", title="menu")= item
+    a(href="tel: +74957674527", title="phone number").tel  +7 495 767 45 27
+    button#leftOrder Оставить заявку
 //END header

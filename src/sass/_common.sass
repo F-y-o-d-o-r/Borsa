@@ -2,43 +2,162 @@ html
   font-size: 10px
 body
   background: #FFF
-  +css-lock(16, 30, 600, 1280)
+  // +css-lock(16, 30, 600, 1280)
   line-height: 1.4
   font-family: regular
-  // font-size: 10px
+  +miw(320)
 a
   text-decoration: none
   color: #000
+.container
+  +maw(1280)
+  margin: 0 auto
+  +r(1300)
+    padding-left: 24px
+    padding-right: 24px
 /* ============================================================================
- * header start
+ * HEADER START
  * ============================================================================ */
-
 header.header
-  +mw(1340)
-  margin-left: auto
-  margin-right: auto
-  justify-content: space-between
-  .logo-wrapper
-    img
-      height: 25px
-      width: 112.5px
-      margin-right: 20px
-    p
-      margin-left: 20px
-      padding-left: 20px
-      border-left: 1px solid $gray2
-      font-size: 11px
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  z-index: 100
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08)
+  background-color: #fff
+  padding: 0 20px
+  .header-wrapper.flex
+    +maw(1340)
+    margin-left: auto
+    margin-right: auto
+    justify-content: space-between
+    .logo-wrapper
+      align-items: center
+      img
+        height: 25px
+        width: 112.5px
+      p
+        margin-left: 20px
+        padding-left: 20px
+        border-left: 1px solid $gray2
+        font-size: 11px
+        font-family: medium
+        color: $gray2
+        +maw(183)
+    ul
+      li
+        line-height: 100%
+        margin-right: 25px
+        height: 80px
+        a
+          +Menu_text_desktop
+          display: inline-block
+          height: 100%
+          line-height: 80px
+          border-bottom: 4px solid #fff
+          +tr(0.5s border-bottom ease-in-out)
+          &:hover
+            border-bottom: 4px solid $green1
+        &:last-of-type
+          margin-right: 0
+    a.tel
       font-family: medium
-      color: $gray2
-      +mw(183)
+      color: $gray3
+      font-size: 20px
+      display: flex
+      align-items: center
+    button
+      background-color: $green1
+      color: #fff
+      font-family: medium
+      font-size: 15px
+      border-radius: 2px
+      height: 40px
+      padding: 0 30px
+      margin-top: 20px
+/* ============================================================================
+ * HEADER END
+ * ============================================================================ */
+/* ============================================================================
+ * FOOTER START
+ * ============================================================================ */
+footer.footer
+  padding: 50px 0 30px
+  background-color: $footer
+  +r(768)
+    padding: 40px 0 30px
+  +r(375)
+    padding: 40px 0 20px
+  .menu
+    margin-bottom: 40px
+    border-bottom: 1px solid $gray2
+    +r(375)
+      margin-bottom: 30px
   ul
+    justify-content: space-between
+    +r(1300)
+      flex-wrap: wrap
+      justify-content: flex-start
     li
+      margin-right: 25px
+      margin-bottom: 60px
+      +r(768)
+        margin-bottom: 40px
+      +r(375)
+        margin-bottom: 30px
       a
         +Menu_text_desktop
-  a.tel
-    font-family: medium
-    color: $gray3
-    font-size: 20px
+        display: inline-block
+        +tr(0.5s color ease-in-out)
+        color: #fff
+        &:hover
+          color: $green1
+      &:last-of-type
+        margin-right: 0
+  .price-list
+    border-left: 1px solid #ffffff
+    padding-left: 20px
+    &:before
+      content: ' ';
+      background-image: url('../img/footer-pdf.png')
+      height: 20px
+      width: 20px
+      background-size: 20px 20px
+      background-repeat: no-repeat
+      display: inline-block
+      margin-right: 20px
+      vertical-align: -5px
+  .row.flex
+    justify-content: space-between
+    align-items: center
+    color: $gray2
+    font-size: 13px
+    +r(768)
+      font-size: 12px
+    +r(700)
+      flex-direction: column
+    a
+      text-decoration: underline
+      color: $gray2
+      font-size: 13px
+      +r(700)
+        order: 2
+      +r(768)
+        font-size: 12px
+    .social-wrapper
+      +r(700)
+        order: 1
+        margin-bottom: 40px
+      a
+        text-decoration: none
+        margin-right: 30px
+        &:last-of-type
+          margin-right: 0
+    p
+      +r(700)
+        order: 3
+        margin-top: 30px
 /* ============================================================================
- * header end
+ * FOOTER END
  * ============================================================================ */
