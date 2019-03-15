@@ -8,8 +8,9 @@ body
   margin-top: 80px
   +r(1300)
     margin-top: 109px
-  +r(650)
+  +r(700)
     margin-top: 71px
+  +miw(320)
 
 ::selection 
   background: #ccc
@@ -51,7 +52,7 @@ header.header
       align-items: center
       +r(1300)
         height: 56px
-      +r(650)
+      +r(700)
         height: 40px
       img
         height: 25px
@@ -69,9 +70,12 @@ header.header
           align-items: center
           line-height: 19px
           padding-top: 10px
-        +r(650)
+        +r(700)
           display: none
     nav
+      +r(1300)
+        display: none
+    a.tel.header-tel
       +r(1300)
         display: none
     ul
@@ -90,14 +94,6 @@ header.header
             border-bottom: 4px solid $green1
         &:last-of-type
           margin-right: 0
-    a.tel
-      font-family: medium
-      color: $gray3
-      font-size: 20px
-      display: flex
-      align-items: center
-      +r(1300)
-        display: none
     button
       background-color: $green1
       color: #fff
@@ -110,7 +106,7 @@ header.header
       +r(1300)
         margin: 27px 0
         height: 55px
-      +r(650)
+      +r(700)
         display: none
   // HAMBURGER
   .nav-icon-wrapper
@@ -185,15 +181,28 @@ header.header
   overflow: auto
   opacity: 0
   +tr(all 0.5s ease-in-out)
+  +rmin(1300)
+    display: none
   .burger-content
     +maw(460)
     margin: 60px auto 90px
     +r(500)
       margin: 15px auto
+      padding: 0 20px
   .nav-wrapper
     height: 380px
+    margin-bottom: 90px
+    +r(768)
+      margin-bottom: 238px
     +r(500)
       height: auto
+      margin-bottom: 80px
+    // +r(375)
+  .left-part
+    +r(500)
+      padding-bottom: 20px
+      margin-bottom: 20px
+      border-bottom: 1px solid $grey6
   nav
     display: flex
     justify-content: space-between
@@ -205,6 +214,7 @@ header.header
       flex-direction: column
       +r(500)
         +maw(227)
+        width: 227px
         margin: 0 auto
       li
         margin: 30px 0
@@ -235,12 +245,48 @@ header.header
     background-color: #E1E1E1
     +r(500)
       display: none
+  a.tel
+    justify-content: center
+    margin-bottom: 40px
+    +r(375)
+      margin-bottom: 35px
+  .social-wrapper
+    display: flex
+    justify-content: center
+    margin-bottom: 46px
+    +r(375)
+      margin-bottom: 35px
+    a
+      margin-right: 30px
+      &:last-of-type
+        margin-right: 0
+  .terms
+    text-align: center
+    display: block
+    text-decoration: underline
+    color: $gray3
+    font-size: 13px
+    margin-bottom: 35px
+  .rights
+    text-align: center
+    display: block
+    color: $gray3
+    font-size: 13px
 .burger-menu-wrapper.open
   top: 109px
   bottom: 0
   opacity: 1
-  +r(650)
+  +r(700)
     top: 71px
+.burger-menu-wrapper,
+header.header
+  a.tel
+    font-family: medium
+    color: $gray3
+    font-size: 20px
+    display: flex
+    align-items: center
+
 /* ============================================================================
  * HEADER END
  * ============================================================================ */
