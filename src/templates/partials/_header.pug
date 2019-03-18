@@ -1,5 +1,6 @@
 - let headermenu = ['О компании', 'Продукция', 'Производство', 'Новости', 'Контакты'];
 - let boorgermenu = [['О компании', true], ['Продукция', true], ['Производство', true], ['Доставка', true], ['Контроль качества', true], ['Новости'], ['Карьера'], ['Контакты'], ['Прайс-лист', 'price-list'], ['Карта сайта']];
+- let submenu = [['Строповые мягкие контейнеры', true], ['Ленточные мягкие контейнеры', true], ['Вентиляционные мягкие контейнеры (Овощные)', true], ['Вагонный вкладыш', true], ['Лайнер-Бэги', true], ['Полиэтиленовые вкладыши в мягкие контейнеры'], ['Полипропиленовая ткань'], ['Швейная нить'], ['Ленты, стропы'], ['Полипропиленовый шпагат']];
 //BEGIN header
 header.header
   .header-wrapper.flex
@@ -46,4 +47,19 @@ header.header
     a(href="#", title="Пользовательское соглашение").terms Пользовательское соглашение
     p.rights © 2019 Борса. Все права защищены.
 //END Header burger menu
+//START Header sub menu
+.header-submenu-wrapper.dnone
+  .submenu-wrapper
+      ul.flex.left-part
+        for item in submenu
+          if item[1] === true
+            li
+              a(href="#", title="menu")= item[0]
+      .line
+      ul.flex.right-part
+        for item in submenu
+          if item[1] !== true
+            li
+              a(href="#", title="menu")= item[0]
+//END Header sub menu
 //END header
