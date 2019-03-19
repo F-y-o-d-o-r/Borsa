@@ -114,6 +114,7 @@
   justify-content: space-between
   align-items: center
   margin-bottom: 80px
+  width: 100%
   +r(1024)
     margin-bottom: 60px
   +r(375)
@@ -190,13 +191,27 @@
           font-size: 20px
         +r(504)
           margin-bottom: 60px
-      
 /* ============================================================================
  * END Industry block
  * ============================================================================ */
 /* ============================================================================
  * START News block
  * ============================================================================ */
+.news
+  display: flex
+  justify-content: flex-start
+  flex-wrap: wrap
+  margin-left: -20px
+  margin-right: -20px
+  .news-item
+    width: 400px
+    height: 400px
+    overflow: hidden
+    border-radius: 3px
+    background-color: $green2
+    margin-bottom: 40px
+    margin-right: 20px
+    margin-left: 20px
 /* ============================================================================
  * END News block
  * ============================================================================ */
