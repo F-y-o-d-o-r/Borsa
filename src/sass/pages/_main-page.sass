@@ -1,5 +1,14 @@
+/* ============================================================================
+ * START Slider
+ * ============================================================================ */
+
 .slider-wrapper
   position: relative
+  margin-bottom: 76px
+  +r(1024)
+    margin-bottom: 60px
+  +r(550)
+    margin-bottom: 40px
   .slick.slick-main
     margin-bottom: 0
     height: 640px
@@ -43,30 +52,42 @@
     width: auto
     li
       button:before
+        position: absolute
         background-color: #fff
         content: ''
         height: 9.33px
         width: 9.33px
         border-radius: 50px
-        background-color: $green1
+        background-color: #fff
+        left: 0
+        top: 0
+        +trans
       button:after
-        position: absolute
-        top: -5.8px
-        left: -5.5px
         content: ""
-        width: 20px
-        height: 20px
-        font-size: 6px;
-        line-height: 20px;
-        text-align: center;
-        opacity: .25;
+        position: absolute
+        width: 15px
+        height: 15px
+        top: -2.7px
+        left: -3px
+        font-size: 6px
+        line-height: 20px
+        text-align: center
+        opacity: .25
         background-color: transparent
         content: ''
         border-radius: 50px
-        border: 1px solid $green1
+        border: 1px solid #ffffff
+        +trans
     li.slick-active
+      button:before
+        background-color: $green1
       button:after
         opacity: 0.75
+        border: 1px solid $green1
+        top: -6px
+        left: -6px
+        width: 21px
+        height: 21px
   .slick__text
     position: absolute
     color: #fff
@@ -90,3 +111,64 @@
 /* ============================================================================
  * END Slider
  * ============================================================================ */
+/* ============================================================================
+ * START Common
+ * ============================================================================ */
+.section-header-wrapper
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin-bottom: 80px
+  +r(1024)
+    margin-bottom: 60px
+  +r(375)
+    margin-bottom: 40px
+  h3
+    +fm
+    font-size: 36px
+    +r(1024)
+      font-size: 30px
+    +r(550)
+      font-size: 20px
+  .btn-more
+    background-color: $gray7
+    display: flex
+    align-items: center
+    line-height: 50px
+    padding: 0 20px
+    +fs
+    font-size: 14px
+    +r(450)
+      display: none
+    svg
+      margin-left: 20px
+/* ============================================================================
+ * END Common
+ * ============================================================================ */
+
+/* ============================================================================
+ * START Product block
+ * ============================================================================ */
+
+/* ============================================================================
+ * END Product block
+ * ============================================================================ */
+/* ============================================================================
+ * START Industry block
+ * ============================================================================ */
+/* ============================================================================
+ * END Industry block
+ * ============================================================================ */
+/* ============================================================================
+ * START News block
+ * ============================================================================ */
+/* ============================================================================
+ * END News block
+ * ============================================================================ */
+/* ============================================================================
+ * START Connect block
+ * ============================================================================ */
+/* ============================================================================
+ * END Connect block
+ * ============================================================================ */
+
