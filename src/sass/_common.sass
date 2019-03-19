@@ -39,21 +39,63 @@ a
 /* ============================================================================
  * START Product item
  * ============================================================================ */
+.products-whole-wrapper
+  background-color: $gray9
+  padding-top: 76px
+  padding-bottom: 110px
+  +r(1024)
+    padding-top: 60px
+    padding-bottom: 20px
+  +r(550)
+    padding-top: 40px
+.products-wrapper
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  +r(644)
+    justify-content: center
 .product-item
+  width: 25%
+  margin-bottom: 50px
+  position: relative
   width: 290px
   height: 390px
   border-radius: 7px
   padding: 20px
   border: 1px solid $gray7
+  display: flex
+  flex-direction: column
+  overflow: hidden
+  +trans
+  +r(1024)
+    margin-bottom: 40px
+  +r(375)
+    margin-bottom: 30px
+  &:hover
+    .product-item__header
+      color: $green1
+    svg
+      transform: rotate(50deg)
   svg
     height: 30px
     width: 30px
+    align-self: flex-end
+    margin-bottom: 25px
+    +trans
   .product-item__header
     +fm
     font-size: 20px
+    +trans
   .product-item__image
     height: 200px
     width: 200px
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100%
+    background-repeat: no-repeat
+    background-size: cover
+    height: 160px
 /* ============================================================================
  * END Product item
  * ============================================================================ */
