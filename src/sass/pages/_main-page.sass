@@ -1,0 +1,86 @@
+.slider-wrapper
+  position: relative
+  .slick.slick-main
+    margin-bottom: 0
+    height: 640px
+    +r(1024)
+      height: 428px
+    +r(768)
+      height: 384px
+    .slick__item-wrapper
+      background: linear-gradient(0deg, rgba(0, 18, 9, 0.45), rgba(0, 18, 9, 0.45))
+      height: 640px
+      background-repeat: no-repeat 
+      background-size: cover
+      position: relative
+      +r(1024)
+        height: 428px
+      +r(768)
+        height: 384px
+      &:before
+        content: ''
+        position: absolute
+        left: 0
+        top: 0
+        right: 0
+        bottom: 0
+        background-image: linear-gradient(0deg, rgba(0, 18, 9, 0.45), rgba(0, 18, 9, 0.45))
+  .container.dots
+    width: 100%
+    position: absolute
+    left: 0
+    bottom: 80px
+    right: 0
+    +r(1024)
+      bottom: 60px
+    +r(768)
+      bottom: 50px
+    +r(600)
+      bottom: 60px
+  .slick-dots
+    width: auto
+    li
+      button:before
+        background-color: #fff
+        content: ''
+        height: 9.33px
+        width: 9.33px
+        border-radius: 50px
+        background-color: $green1
+      button:after
+        position: absolute
+        top: -5.8px
+        left: -5.5px
+        content: ""
+        width: 20px
+        height: 20px
+        font-size: 6px;
+        line-height: 20px;
+        text-align: center;
+        opacity: .25;
+        background-color: transparent
+        content: ''
+        border-radius: 50px
+        border: 1px solid $green1
+    li.slick-active
+      button:after
+        opacity: 0.75
+  .slick__text
+    position: absolute
+    color: #fff
+    +fm
+    font-size: 60px
+    +maw(840)
+    margin-top: 160px
+    +r(1024)
+      font-size: 50px
+      margin-top: 100px
+      max-width: 90%
+    +r(768)
+      margin-top: 0px
+    +r(600)
+      margin-top: 100px
+      font-size: 25px
+/* ============================================================================
+ * END Slider
+ * ============================================================================ */
