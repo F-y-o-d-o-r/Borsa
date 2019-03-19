@@ -7,3 +7,4 @@ $('.slick').slick({
   dots: true,
   appendDots: '.container.dots'
 });
+$('.slick').show();
