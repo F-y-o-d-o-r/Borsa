@@ -1,0 +1,11 @@
+- let mainpageadvantage = [['Химическая', 'img/advantages/chemistry.svg'], ['Аграрная', 'img/advantages/agrar.svg'], ['Строительная', 'img/advantages/build.svg'], ['Пищевая', 'img/advantages/food.svg'], ['Металлургия', 'img/advantages/metal.svg'], ['Газовая и нефтяная', 'img/advantages/metal.svg']];
+
+section.industries-wrapper
+  .container.clearfix
+    .right-part
+      h3 Отрасли, где применяются мягике контейнеры / биг бэг
+      .advantages
+        for item in mainpageadvantage
+          .advantage
+            .advantage__img(style="background-image:url('" + item[1] +"')")
+            .advantage__header=item[0]

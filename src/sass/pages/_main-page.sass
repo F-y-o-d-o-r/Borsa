@@ -151,6 +151,46 @@
 /* ============================================================================
  * START Industry block
  * ============================================================================ */
+.industries-wrapper
+  margin-bottom: 120px
+  +r(1024)
+    margin-bottom: 68px
+  +r(786)
+    margin-bottom: -20px
+  +r(375)
+    margin-bottom: -50px
+  .container
+    clear: both
+    .right-part
+      width: 880px
+      float: right
+      position: relative
+      +r(1300)
+        width: 710px
+      +r(900)
+        display: block
+        width: 100%
+      &:before
+        content: url('../img/mainpagebag.png')
+        position: absolute
+        left: -480px
+        top: -100px
+        +r(1300)
+          left: -380px
+        +r(900)
+          display: none
+      h3
+        +fm
+        font-size: 36px
+        line-height: 1.2
+        margin-bottom: 120px
+        +r(1024)
+          font-size: 30px
+        +r(375)
+          font-size: 20px
+        +r(504)
+          margin-bottom: 60px
+      
 /* ============================================================================
  * END Industry block
  * ============================================================================ */

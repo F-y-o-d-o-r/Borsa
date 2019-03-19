@@ -20,6 +20,11 @@ body
   background: #ccc
   color:#fff
 
+.clearfix::after
+  display: table
+  content: ""
+  clear: both
+
 a
   text-decoration: none
   color: #000
@@ -97,4 +102,30 @@ a
     height: 160px
 /* ============================================================================
  * END Product item
+ * ============================================================================ */
+/* ============================================================================
+ * START Advantages
+ * ============================================================================ */
+.advantages
+  display: flex
+  flex-wrap: wrap
+  +r(900)
+    justify-content: space-between
+  +r(504)
+    justify-content: center
+  .advantage
+    width: 290px
+    margin-bottom: 100px
+    +r(1300)
+      width: 220px
+    .advantage__img
+      height: 50px
+      margin-bottom: 30px
+      background-size: contain
+      background-repeat: no-repeat
+    .advantage__header
+      +fs
+      font-size: 18px
+/* ============================================================================
+ * END Advantages
  * ============================================================================ */
