@@ -17,7 +17,8 @@
       background: linear-gradient(0deg, rgba(0, 18, 9, 0.45), rgba(0, 18, 9, 0.45))
       height: 640px
       background-repeat: no-repeat 
-      background-size: cover
+      // background-size: cover
+      background-position: center center
       position: relative
       +r(1024)
         height: 428px
@@ -126,18 +127,31 @@
       font-size: 30px
     +r(550)
       font-size: 20px
-  .btn-more
-    background-color: $gray7
+.btn-more
+  background-color: $gray7
+  display: flex
+  align-items: center
+  line-height: 50px
+  padding: 0 20px
+  +fs
+  font-size: 14px
+  +r(450)
+    display: none
+  svg
+    margin-left: 20px
+.btn-more.mobile
+  position: relative
+  display: none
+  width: 227px
+  margin-left: auto
+  margin-right: auto
+  justify-content: spase-between
+  +r(450)
     display: flex
-    align-items: center
-    line-height: 50px
-    padding: 0 20px
-    +fs
-    font-size: 14px
-    +r(450)
-      display: none
-    svg
-      margin-left: 20px
+    margin-bottom: 40px
+  svg
+    position: absolute
+    right: 20px
 /* ============================================================================
  * END Common
  * ============================================================================ */
@@ -154,12 +168,15 @@
  * ============================================================================ */
 .industries-wrapper
   margin-bottom: 120px
+  margin-top: 80px
   +r(1024)
     margin-bottom: 68px
   +r(786)
     margin-bottom: -20px
+    margin-top: 60px
   +r(375)
     margin-bottom: -50px
+    margin-top: 40px
   .container
     clear: both
     .right-part
