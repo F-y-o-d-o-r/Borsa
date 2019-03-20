@@ -197,15 +197,16 @@
 /* ============================================================================
  * START News block
  * ============================================================================ */
-// section.news-wrapper
-  // overflow-x: hidden
+section.news-wrapper
+  .container
+    overflow: hidden
 .news
   display: flex
   justify-content: flex-start
   flex-wrap: wrap
   margin: 0 -20px 80px
-  +r(1024)
-    margin: 0 -20px 60px
+  // +r(1024)
+  //   margin: 0 -20px 60px
   +r(904)
     justify-content: center
   .news__item
