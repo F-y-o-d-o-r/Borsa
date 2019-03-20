@@ -201,8 +201,10 @@
   display: flex
   justify-content: flex-start
   flex-wrap: wrap
-  margin: 0 -20px
-  +r(1300)
+  margin: 0 -20px 80px
+  +r(1024)
+    margin: 0 -20px 60px
+  +r(904)
     justify-content: center
   .news__item
     position: relative
@@ -221,6 +223,43 @@
     z-index: 1
     position: absolute
     padding-right: 20px
+    left: 40px
+    right: 20px
+    top: 40px
+    bottom: 40px
+    color: #ffffff
+    line-height: 1.2
+    font-size: 18px
+    &:after
+      content: ''
+      width: 60px
+      height: 2px
+      background-color: #fff
+      position: absolute
+      bottom: 0
+      left: 0
+    +r(768)
+      font-size: 16px
+    +r(375)
+      font-size: 14px
+    .header
+      display: flex
+      justify-content: space-between
+      margin-bottom: 39px
+      &__left
+        +fm
+        font-size: 48px
+        +r(768)
+          font-size: 40px
+        span
+          font-size: 14px
+          display: block
+          +r(768)
+            font-size: 12px
+      &__right
+        background-image: url('../img/newsicon.svg')
+        height: 28px
+        width: 28px
   .news__bg
     height: 200px
     width: 200px
