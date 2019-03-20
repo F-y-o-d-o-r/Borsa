@@ -197,6 +197,8 @@
 /* ============================================================================
  * START News block
  * ============================================================================ */
+// section.news-wrapper
+  // overflow-x: hidden
 .news
   display: flex
   justify-content: flex-start
@@ -280,6 +282,84 @@
 /* ============================================================================
  * START Connect block
  * ============================================================================ */
+.connect-wrapper
+  h3
+    font-size: 36px
+    line-height: 1.2
+    text-align: center
+    +fr
+    margin-bottom: 119px
+    +r(1024)
+      margin-bottom: 100px
+      font-size: 30px
+    +r(375)
+      font-size: 20px
+  .questions
+    background-color: $green1
+    .container
+      display: flex
+      justify-content: space-between
+      align-items: center
+      color: #ffffff
+      +r(800)
+        flex-direction: column
+      .left-part
+        display: flex
+        justify-content: space-between
+        align-items: center
+        flex-grow: 1
+        +r(1140)
+          flex-direction: column
+          align-items: flex-start
+        +r(800)
+          align-items: center
+        .left-part__one
+          display: flex
+          justify-content: space-between
+          align-items: center
+          flex-grow: 1
+          svg
+            margin: 15px 20px 15px 0
+          h6
+            +fr
+            font-size: 24px
+            +r(768)
+              font-size: 20px
+        .left-part__two
+          margin-left: 10%
+          +r(1140)
+            margin-left: 0
+          p
+            font-size: 16px
+            +r(1140)
+              margin-bottom: 30px
+            +r(800)
+              text-align: center
+            +r(768)
+              font-size: 14px
+      form
+        display: flex
+        border-radius: 3px
+        overflow: hidden
+        margin-left: 5%
+        +r(1140)
+          margin-left: 0
+        +r(800)
+          margin-bottom: 40px
+        input
+          height: 40px
+          text-indent: 30px
+          +r(385)
+            text-indent: 20px
+        .btn
+          background-color: #fff
+          height: 40px
+          padding-right: 30px
+          color: $green1
+          font-size: 15px
+          line-height: 15px
+          +r(385)
+            padding-right: 20px
 /* ============================================================================
  * END Connect block
  * ============================================================================ */
