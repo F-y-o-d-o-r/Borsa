@@ -289,6 +289,10 @@ header.header
           display: inline-block
           line-height: 1.2
           color: $gray1
+          +trans
+          &:hover,
+          &:active
+            color: $green1
     .left-part
       padding-right: 40px
     .right-part
@@ -331,8 +335,9 @@ footer.footer
         display: inline-block
         +tr(0.5s color ease-in-out)
         color: #fff
-        &:hover
-          color: $green1
+        &:hover,
+        &:active
+          color: #8C8C8C
       &:last-of-type
         margin-right: 0
   .price-list
@@ -361,6 +366,9 @@ footer.footer
       text-decoration: underline
       color: $gray2
       font-size: 13px
+      +trans
+      &:hover
+        color: #ffffff
       +r(700)
         order: 2
       +r(768)
@@ -374,6 +382,20 @@ footer.footer
         margin-right: 30px
         &:last-of-type
           margin-right: 0
+      .facebook-footer-link,
+      .instagram-footer-link,
+      .youtube-footer-link
+        svg
+          path
+            +trans
+          circle
+            +trans
+        &:hover
+          svg
+            path
+              fill: #ffffff
+            circle
+              stroke: #ffffff
     p
       +r(700)
         order: 3
