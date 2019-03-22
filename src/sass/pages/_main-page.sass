@@ -169,8 +169,12 @@
   align-items: center
   line-height: 50px
   padding: 0 20px
+  +trans
   +fs
   font-size: 14px
+  &:hover,
+  &:active
+    background-color: $gray6
   +r(450)
     display: none
   svg
@@ -182,6 +186,10 @@
   margin-left: auto
   margin-right: auto
   justify-content: spase-between
+  +trans
+  &:hover,
+  &:active
+    background-color: $gray6
   +r(450)
     display: flex
     margin-bottom: 40px

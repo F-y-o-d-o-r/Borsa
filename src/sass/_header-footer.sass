@@ -71,11 +71,15 @@ header.header
       height: 40px
       padding: 0 30px
       margin: 20px 0
+      +trans
       +r(1300)
         margin: 27px 0
         height: 55px
       +r(700)
         display: none
+      &:hover,
+      &:active
+        background-color: $green5
   // HAMBURGER
   .nav-icon-wrapper
     +r(1300)
