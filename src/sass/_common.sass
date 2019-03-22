@@ -76,16 +76,27 @@ a
   +r(375)
     margin-bottom: 30px
   &:hover
+    background-color: $green1
     .product-item__header
-      color: $green1
+      color: #fff
     svg
-      transform: rotate(50deg)
+      margin-bottom: 100px
+      circle
+        fill: #fff
+      path
+        fill: #3ECC29
+    .product-item__image
+      bottom: -100%
   svg
     height: 30px
     width: 30px
     align-self: flex-end
     margin-bottom: 25px
     +trans
+    circle
+      +trans
+    path
+      +trans
   .product-item__header
     +fm
     font-size: 20px
@@ -100,6 +111,7 @@ a
     background-repeat: no-repeat
     background-size: cover
     height: 160px
+    +trans
 /* ============================================================================
  * END Product item
  * ============================================================================ */
