@@ -265,8 +265,6 @@ section.news-wrapper
   justify-content: flex-start
   flex-wrap: wrap
   margin: 0 -20px 80px
-  // +r(1024)
-  //   margin: 0 -20px 60px
   +r(904)
     justify-content: center
   +r(450)
@@ -282,10 +280,16 @@ section.news-wrapper
     background-color: $green2
     margin: 0 20px 40px
     padding: 40px
+    +trans
     +r(375)
       width: 335px
       height: 335px
       margin-bottom: 35px
+    &:hover,
+    &:active
+      background-color: $green4
+      .news__bg
+        background-color: $green2
   .news__content
     z-index: 1
     position: absolute
@@ -335,6 +339,7 @@ section.news-wrapper
     bottom: 0
     left: 0
     z-index: 0
+    +trans
     +r(768)
       height: 170px
       width: 170px
