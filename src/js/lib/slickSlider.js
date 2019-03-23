@@ -1,6 +1,9 @@
 import $ from 'jquery';
 import 'slick-carousel';
 
+/* ============================================================================
+ * START main-page
+ * ============================================================================ */
 $('.slick').slick({
   prevArrow: false,
   nextArrow: false,
@@ -18,3 +21,24 @@ $('.slick').slick({
   autoplaySpeed: 5000
 });
 // $('.slick').show();
+/* ============================================================================
+ * END main-page
+ * ============================================================================ */
+/* ============================================================================
+ * START product-page
+ * ============================================================================ */
+$('.slick-product-slider').slick({
+  arrows: true,
+  appendArrows: '.slick-btns-wrapper'
+});
+// On before slide change
+$('.slick-product-slider').on('afterChange', function(event, slick, currentSlide) {
+  $('#types li').removeClass('active');
+  $('#types li').eq(currentSlide).addClass('active');
+});
+$('#types').on('click', 'li', function() {
+  $('.slick-product-slider').slick('slickGoTo', $(this).index(), false);
+});
+/* ============================================================================
+ * END product-page
+ * ============================================================================ */

@@ -1,0 +1,37 @@
+---
+title: Borsa
+bodyClass: bodyClass
+outClass: outClass
+headDescription: Borsa product page
+headKeywords: borsa, landing, bigbag, product
+---
+extends layouts/_layout
+block content
+
+  main
+    include pages/_9-product-page-product
+    include pages/_10-product-page-containers
+    include pages/_11-product-page-price
+    include pages/_12-product-page-advantages
+    include pages/_13-product-page-slider
+    include pages/_14-product-page-more
+  
+  // variable use example
+  //- h1!= title
+
+  // partial example
+  //- include ./partials/_example
+
+  // mixin example
+  //- +icon('facebook')
+
+  // variable set example
+  //- - let list = ['text 1', 'text 2', 'text 3'];
+
+  // loop example
+  //- ul  
+  //-   for item in list
+  //-     li= item
+
+//- h1.slider
+//-   +hide-text
