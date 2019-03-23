@@ -32,6 +32,7 @@ a
 .container
   +maw(1280)
   margin: 0 auto
+  width: 100%
   +r(1300)
     padding-left: 32px
     padding-right: 32px
@@ -56,8 +57,10 @@ a
 .products-wrapper
   display: flex
   flex-wrap: wrap
-  justify-content: space-between
-  +r(644)
+  justify-content: flex-start
+  margin-left: -20px
+  margin-right: -20px
+  +r(684)
     justify-content: center
 .product-item
   margin-bottom: 50px
@@ -70,6 +73,8 @@ a
   display: flex
   flex-direction: column
   overflow: hidden
+  margin-left: 20px
+  margin-right: 20px
   +trans
   +r(1024)
     margin-bottom: 40px
@@ -130,6 +135,8 @@ a
     margin-bottom: 100px
     +r(1300)
       width: 220px
+    +r(1024)
+      margin-bottom: 80px
     .advantage__img
       height: 50px
       margin-bottom: 30px
@@ -196,4 +203,29 @@ footer
         display: none
 /* ============================================================================
  * END UL
+ * ============================================================================ */
+/* ============================================================================
+ * START Breadcrambs
+ * ============================================================================ */
+.breadcrambs
+  color: $gray3
+  +h4desktop
+  padding-top: 40px
+  margin-bottom: 10px
+  +r(1024)
+    +h4tablet
+  +r(375)
+    padding-top: 30px
+h1.breadcrambs-h1
+  +h1desktop
+  margin-bottom: 100px
+  +maw(510)
+  +r(1024)
+    +h1tablet
+    max-width: 100%
+  +r(375)
+    +h1mobile
+    margin-bottom: 60px
+/* ============================================================================
+ * END Breadcrambs
  * ============================================================================ */
