@@ -6,4 +6,6 @@ PageList:
 - file: about-us-page.html
   ready: 100
 - file: products-page.html
+  ready: 100
+- file: product-page.html
   ready: 5
