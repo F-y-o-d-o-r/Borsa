@@ -160,3 +160,32 @@ a
 /* ============================================================================
  * END Forms
  * ============================================================================ */
+/* ============================================================================
+ * START UL
+ * ============================================================================ */
+ul
+  li
+    position: relative
+    margin-bottom: 30px
+    &:before
+      content: ''
+      position: absolute
+      left: -38px // 28 + 8
+      top: 5px
+      height: 8px
+      width: 8px
+      border-radius: 50px
+      background-color: $green1
+    &:after
+      content: ''
+      position: absolute
+      left: -42px
+      top: 1px
+      height: 16px
+      width: 16px
+      border-radius: 50px
+      background-color: transparent
+      border: 1px solid $green1
+/* ============================================================================
+ * END UL
+ * ============================================================================ */

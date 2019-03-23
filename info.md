@@ -1,5 +1,10 @@
 # Info
 
+1300 - 1280
+1024
+768
+375
+
 DON'T FORGET to install svg4everybody or svgxuse otherwise IE will not show you svg sprite ¯\_(ツ)_/¯  
 
-wp breadcrambs http://kostyakhmelev.ru/texnicheskaya-chast/hlebnyie-kroshki-wordpress.html
+wp breadcrambs <http://kostyakhmelev.ru/texnicheskaya-chast/hlebnyie-kroshki-wordpress.html>
