@@ -3,3 +3,5 @@ ProjectTitle: Borsa
 PageList:
 - file: main-page.html
   ready: 100
+- file: about-us-page.html
+  ready: 5
