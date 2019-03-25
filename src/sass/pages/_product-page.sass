@@ -375,7 +375,7 @@
     +r(1024)
       padding-left: 43px
       padding-right: 43px
-    +r(768)
+    +r(950)
       padding-left: 0
       padding-right: 0
     .runSlider
@@ -384,7 +384,14 @@
       height: 480px
       width: 840px
       background-repeat: no-repeat
-      background-size: contain
+      background-size: cover
+      background-position: center center
+      +r(950)
+        width: 100%
+      +r(768)
+        height: 420px
+      +r(375)
+        height: 220px
       &:before
         position: absolute
         content: ''
@@ -405,17 +412,42 @@
         right: -10px
         top: -10px
         z-index: -1
+        +r(950)
+          height: 100%
+          width: 100%
       &:hover
         &:before
           background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4))
-      p
-        color: $gray2
-        margin-top: 15px
-        font-size: 13px
-        line-height: 1.2
-        +fr
-        +r(768)
-          margin-top: 20px
+      .info-wrapper
+        position: absolute
+        right: 40px
+        top: 40px
+        display: flex
+        align-items: center
+        .num
+          color: #ffffff
+          font-size: 16px
+          +fm
+          margin-right: 25px
+          +r(375)
+            font-size: 14px
+            margin-right: 10px
+        .more
+          height: 50px
+          width: 50px
+          display: flex
+          justify-content: center
+          align-items: center
+          background-color: #fff
+          border-radius: 50px
+    p
+      color: $gray2
+      margin-top: 15px
+      font-size: 13px
+      line-height: 1.2
+      +fr
+      +r(768)
+        margin-top: 20px
 /* ============================================================================
  * END Slider
  * ============================================================================ */
