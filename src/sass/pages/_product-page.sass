@@ -452,6 +452,65 @@
  * END Slider
  * ============================================================================ */
 /* ============================================================================
+ * START Slider popup
+ * ============================================================================ */
+.hidden-slider-popup
+  z-index: 100
+  position: fixed
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  background-color: rgba(0, 0, 0, 0.8)
+  padding-top: 120px
+  +r(1024)
+    padding-top: 225px
+  +r(768)
+    padding-top: 290px
+  .hidden-slider-wrapper
+    .slick-popup-slider
+      width: 1080px
+      height: 640px
+      overflow: hidden
+      margin-left: auto
+      margin-right: auto
+      box-sizing: border-box
+      border: 5px solid #ffffff
+      +r(1300)
+        width: 780px
+        height: 460px
+      +r(870)
+        width: 720px
+        height: 420px
+      +r(780)
+        width: 100%
+      +r(500)
+        height: 290px
+      +r(378)
+        height: 190px
+      .slide
+        background-size: auto 100% 
+        background-position: center center
+        background-repeat: no-repeat
+        height: 640px
+        width: 100%
+        +r(1300)
+          width: 780px
+          height: 460px
+        +r(870)
+          width: 720px
+          height: 420px
+        +r(500)
+          width: 100%
+          height: 290px
+        +r(378)
+          height: 190px
+        
+
+/* ============================================================================
+ * END Slider popup
+ * ============================================================================ */
+/* ============================================================================
  * START More
  * ============================================================================ */
 .product-page-more-wrapper
