@@ -176,7 +176,7 @@
  * END Product
  * ============================================================================ */
 /* ============================================================================
- * START Containers
+ * START Containers / table
  * ============================================================================ */
 .product-page-containers-wrapper
   background-color: $gray9
@@ -207,6 +207,8 @@
         tr:first-of-type,
           th
             padding-top: 0
+            &:first-of-type
+              +fm
         tr:last-of-type
           border-bottom: none
           td
@@ -215,7 +217,6 @@
           th:first-of-type,
           td:first-of-type
             padding-left: 0
-            +fs
             border-right: 1px solid $gray7
             min-width: 190px
             width: 190px
@@ -249,7 +250,7 @@
         tbody
           overflow: auto
 /* ============================================================================
- * END Containers
+ * END Containers / table
  * ============================================================================ */
 /* ============================================================================
  * START Proce
