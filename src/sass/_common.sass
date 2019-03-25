@@ -222,7 +222,8 @@ ul
       border: 1px solid $green1
 header,
 footer,
-.container.dots
+.container.dots,
+.nav-wrapper
   ul
     li
       margin-bottom: 0
@@ -314,4 +315,95 @@ h1.breadcrambs-h1
       height: 240px
 /* ============================================================================
  * END 2 image wrapper
+ * ============================================================================ */
+   /* ============================================================================
+ * START Slider run
+ * ============================================================================ */
+.run-slider-wrapper
+  margin-bottom: 120px
+  +r(1024)
+    margin-bottom: 160px
+  +r(375)
+    margin-bottom: 100px
+  .link-wrapper
+    padding-left: 110px
+    padding-right: 110px
+    +r(1024)
+      padding-left: 43px
+      padding-right: 43px
+    +r(950)
+      padding-left: 0
+      padding-right: 0
+    .runSlider
+      position: relative
+      display: block
+      height: 480px
+      width: 840px
+      background-repeat: no-repeat
+      background-size: cover
+      background-position: center center
+      +r(950)
+        width: 100%
+      +r(768)
+        height: 420px
+      +r(375)
+        height: 220px
+      &:before
+        position: absolute
+        content: ''
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1))
+        height: 100%
+        width: 100%
+        right: 0
+        top: 0
+        bottom: 0
+        left: 0
+        +trans
+      &:after
+        content: ''
+        position: absolute
+        height: 480px
+        width: 840px
+        background-color: $gray7
+        right: -10px
+        top: -10px
+        z-index: -1
+        +r(950)
+          height: 100%
+          width: 100%
+      &:hover
+        &:before
+          background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4))
+      .info-wrapper
+        position: absolute
+        right: 40px
+        top: 40px
+        display: flex
+        align-items: center
+        .num
+          color: #ffffff
+          font-size: 16px
+          +fm
+          margin-right: 25px
+          +r(375)
+            font-size: 14px
+            margin-right: 10px
+        .more
+          height: 50px
+          width: 50px
+          display: flex
+          justify-content: center
+          align-items: center
+          background-color: #fff
+          border-radius: 50px
+    p
+      color: $gray2
+      margin-top: 15px
+      font-size: 13px
+      line-height: 1.2
+      +fr
+      +r(768)
+        margin-top: 20px
+/* ============================================================================
+ * END Slider run
  * ============================================================================ */
