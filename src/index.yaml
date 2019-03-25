@@ -8,4 +8,4 @@ PageList:
 - file: products-page.html
   ready: 100
 - file: product-page.html
-  ready: 60
+  ready: 100

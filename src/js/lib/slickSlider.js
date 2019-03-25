@@ -53,7 +53,6 @@ $(document).on('click', '#runSlider', function(e) {
   let sliderPopupId = $(this).data('slide');
   // init slider
   if (!initPopupSliderDone) {
-    console.log('init');
     $('.slick-popup-slider').slick({
       arrows: true,
       appendArrows: '.hidden-slick-btns-wrapper'
