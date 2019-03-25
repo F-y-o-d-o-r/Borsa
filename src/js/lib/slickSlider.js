@@ -46,15 +46,30 @@ $('#types').on('click', 'li', function() {
 /* ============================================================================
  * START Popup sliders
  * ============================================================================ */
+let initPopupSliderDone = false;
 $(document).on('click', '#runSlider', function(e) {
   e.preventDefault();
-  let id = $(this).data('slide');
-  $('body').find('#' + id).removeClass('dnone');
-  // slider init
+  // find popup
+  let sliderPopupId = $(this).data('slide');
+  // init slider
+  if (!initPopupSliderDone) {
+    console.log('init');
+    $('.slick-popup-slider').slick({
+      arrows: true,
+      appendArrows: '.hidden-slick-btns-wrapper'
+    });
+    initPopupSliderDone = true;
+  }
+  // enter nums text
+  $('.slick-popup-slider').on('afterChange', function(event, slick, currentSlide) {
+    $('#thisSlideNum').text(currentSlide + 1);
+  });
+  $('#sliders').text($('.slick-popup-slider .slick-slide').not('.slick-cloned').length);
+  $('body').find('#' + sliderPopupId).removeClass('dnone');
 });
-$('.slick-popup-slider').slick({
-  arrows: true,
-  appendArrows: '.slick-btns-wrapper'
+// close popup
+$('body').on('click', '#closePopup', function() {
+  $(this).parent().parent().addClass('dnone');
 });
 /* ============================================================================
  * END Popup sliders
