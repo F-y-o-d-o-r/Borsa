@@ -11,7 +11,17 @@
   +r(600)
     padding-bottom: 40px
   .container
-    border-bottom: 1px solid $gray5
+    hr
+      margin-left: 110px
+      margin-right: 110px
+      display: block
+      height: 1px
+      border: 0
+      border-top: 1px solid $gray5
+      padding: 0
+      +r(1024)
+        margin-left: 0
+        margin-right: 0
   .product-description-wrapper
     display: flex
     margin-bottom: 60px
@@ -181,9 +191,9 @@
   .table-block
     padding-left: 110px
     padding-right: 110px
-    margin-bottom: 80px
+    padding-bottom: 80px
     +r(1024)
-      margin-bottom: 60px
+      padding-bottom: 60px
       padding-left: 0
       padding-right: 0
     .table-wrapper
@@ -245,12 +255,14 @@
  * START Proce
  * ============================================================================ */
 .product-page-price-wrapper
+  background-color: $gray9
   padding-bottom: 40px
   +r(1024)
     padding-bottom: 50px
   +r(375)
     padding-bottom: 30px
   h3.h3
+    margin-top: 0
     margin-bottom: 54px
     padding-left: 110px
     padding-right: 110px
@@ -308,4 +320,16 @@
           font-size: 14px
 /* ============================================================================
  * END Price
+ * ============================================================================ */
+/* ============================================================================
+ * START Advantages
+ * ============================================================================ */
+.product-page-advantages-wrapper
+  padding-left: 110px
+  padding-right: 110px
+  +r(1024)
+    padding-left: 0
+    padding-right: 0
+/* ============================================================================
+ * END Advantages
  * ============================================================================ */
