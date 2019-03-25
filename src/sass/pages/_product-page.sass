@@ -173,6 +173,11 @@
   h3.h3
     margin-top: 0
     margin-bottom: 30px
+    padding-left: 110px
+    padding-right: 110px
+    +r(1024)
+      padding-left: 0
+      padding-right: 0
   .table-block
     padding-left: 110px
     padding-right: 110px
@@ -239,10 +244,68 @@
 /* ============================================================================
  * START Proce
  * ============================================================================ */
-h3.h3
-  margin-bottom: 54px
+.product-page-price-wrapper
+  padding-bottom: 40px
   +r(1024)
-    margin-bottom: 40px
+    padding-bottom: 50px
+  +r(375)
+    padding-bottom: 30px
+  h3.h3
+    margin-bottom: 54px
+    padding-left: 110px
+    padding-right: 110px
+    +r(1024)
+      margin-bottom: 40px
+      padding-left: 0
+      padding-right: 0
+  .price-types-wrapper
+    padding-left: 110px
+    padding-right: 110px
+    display: flex
+    flex-wrap: wrap
+    +r(1024)
+      padding-left: 0
+      padding-right: 0
+    +r(768)
+      padding-left: 87px
+    +r(600)
+      padding-left: 0
+    .price-type
+      display: flex
+      width: 33.33%
+      margin-bottom: 40px
+      padding-right: 20px
+      +r(1024)
+        margin-bottom: 50px
+      +r(768)
+        width: 50%
+      +r(500)
+        width: 100%
+        padding-right: 0
+      +r(375)
+        margin-bottom: 30px
+      .num
+        color: $green1
+        font-size: 36px
+        line-height: 1.2
+        margin-right: 30px
+        +fs
+        +r(1024)
+          font-size: 30px
+        +r(375)
+          font-size: 24px
+      p
+        +fr
+        font-size: 18px
+        line-height: 1.2
+        color: $black2
+        width: 220px
+        +r(1024)
+          font-size: 16px
+        +r(500)
+          width: 100%
+        +r(375)
+          font-size: 14px
 /* ============================================================================
  * END Price
  * ============================================================================ */

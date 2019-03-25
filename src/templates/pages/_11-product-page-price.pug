@@ -1,3 +1,9 @@
+- let productpriceitems = [['01', 'Плотности материала, количества слоев ткани;'], ['02', 'Объёма партии поставляемой продукции;'], ['03', 'Размера МКР поставляемой продукции;'], ['04', 'Конструкции мягкого контейнера;'], ['05', 'Индивидуальных требований заказчика.']];
 section.product-page-price-wrapper
   .container
     h3.h3 Стоимость зависит от:
+    .price-types-wrapper
+      for item in productpriceitems
+        .price-type
+          .num=item[0]
+          p=item[1]
