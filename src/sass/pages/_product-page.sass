@@ -360,3 +360,62 @@
 /* ============================================================================
  * END Advantages
  * ============================================================================ */
+/* ============================================================================
+ * START Slider
+ * ============================================================================ */
+.product-page-slider-wrapper
+  margin-bottom: 120px
+  +r(1024)
+    margin-bottom: 160px
+  +r(375)
+    margin-bottom: 100px
+  .link-wrapper
+    padding-left: 110px
+    padding-right: 110px
+    +r(1024)
+      padding-left: 43px
+      padding-right: 43px
+    +r(768)
+      padding-left: 0
+      padding-right: 0
+    .runSlider
+      position: relative
+      display: block
+      height: 480px
+      width: 840px
+      background-repeat: no-repeat
+      background-size: contain
+      &:before
+        position: absolute
+        content: ''
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1))
+        height: 100%
+        width: 100%
+        right: 0
+        top: 0
+        bottom: 0
+        left: 0
+        +trans
+      &:after
+        content: ''
+        position: absolute
+        height: 480px
+        width: 840px
+        background-color: $gray7
+        right: -10px
+        top: -10px
+        z-index: -1
+      &:hover
+        &:before
+          background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4))
+      p
+        color: $gray2
+        margin-top: 15px
+        font-size: 13px
+        line-height: 1.2
+        +fr
+        +r(768)
+          margin-top: 20px
+/* ============================================================================
+ * END Slider
+ * ============================================================================ */
