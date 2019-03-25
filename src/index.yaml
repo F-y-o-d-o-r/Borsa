@@ -9,3 +9,5 @@ PageList:
   ready: 100
 - file: product-page.html
   ready: 100
+- file: production-page.html
+  ready: 50
