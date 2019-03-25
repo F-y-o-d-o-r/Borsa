@@ -326,11 +326,37 @@
  * START Advantages
  * ============================================================================ */
 .product-page-advantages-wrapper
-  padding-left: 110px
-  padding-right: 110px
-  +r(1024)
-    padding-left: 0
-    padding-right: 0
+  h3.h3
+    padding-left: 110px
+    padding-right: 110px
+    margin-bottom: 80px
+    +r(1024)
+      padding-left: 0
+      padding-right: 0
+      margin-bottom: 40px
+    +r(768)
+      margin-bottom: 60px
+    +r(375)
+      margin-bottom: 40px
+  .advantages
+    padding-left: 110px
+    padding-right: 110px
+    justify-content: space-between
+    +r(1024)
+      padding-left: 0
+      padding-right: 0
+    +r(768)
+      padding-left: 87px
+    +r(600)
+      padding-left: 0
+    +r(530)
+      flex-direction: column
+    .advantage
+      margin-bottom: 80px
+      +r(1024)
+        margin-bottom: 100px
+      +r(375)
+        margin-bottom: 60px
 /* ============================================================================
  * END Advantages
  * ============================================================================ */

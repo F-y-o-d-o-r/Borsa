@@ -1,3 +1,12 @@
+- let productadvantages = [['img/advantages/pallet.svg', '1. Удобство транспортировки продукции', 'Контейнеры могут быть упакованы на европаллет, паллет наружного размера, пресс-кип'], ['img/advantages/flyers.svg', '2. Нанесение печати на продукцию', 'Возможность печати логотипа, технической информации и особенности эксплуатации'], ['img/advantages/molecule.svg', '3. Повышенная прочность продукции', 'Контейнер может быть изготовлен из ткани с улучшенными прочностными характеристиками для перевозки тяжёлых и острых грузов']];
+
 section.product-page-advantages-wrapper
   .container
     h3.h3 Каждому клиенту дополнительно предлагаем:
+    //- .product-advantages-wrapper
+    .advantages
+      for item in productadvantages
+        .advantage
+          .advantage__img(style="background-image:url('" + item[0] +"')")
+          .advantage__header=item[1]
+          .advantage__body=item[2]
