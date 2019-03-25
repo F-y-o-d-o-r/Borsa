@@ -1,4 +1,17 @@
+/* ============================================================================
+ * START Product
+ * ============================================================================ */
 .product-page-product-wrapper
+  background-color: $gray9
+  padding-bottom: 60px
+  +r(1024)
+    padding-bottom: 40px
+  +r(768)
+    padding-bottom: 60px
+  +r(600)
+    padding-bottom: 40px
+  .container
+    border-bottom: 1px solid $gray5
   .product-description-wrapper
     display: flex
     margin-bottom: 60px
@@ -24,7 +37,7 @@
         overflow: hidden
         border: 1px solid $gray7
         border-radius: 7px
-        +r(375)
+        +r(350)
           width: 100%
         .slide
           background-size: contain
@@ -147,5 +160,20 @@
   margin-bottom: 60px
   +r(768)
     display: block
-  +r(375)
+  +r(600)
     margin-bottom: 40px
+/* ============================================================================
+ * END Product
+ * ============================================================================ */
+/* ============================================================================
+ * START Cntainers
+ * ============================================================================ */
+.product-page-containers-wrapper
+  background-color: $gray9
+  h3.h3
+    margin-top: 0
+    margin-bottom: 30px
+  
+/* ============================================================================
+ * END Cntainers
+ * ============================================================================ */

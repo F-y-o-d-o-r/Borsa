@@ -415,7 +415,7 @@
       Borsa
   </h1>
     
-    <div class="header__updated"><em>Borsa</em> updated 23.03.2019, 4 pages</div>
+    <div class="header__updated"><em>Borsa</em> updated 25.03.2019, 4 pages</div>
     <nav class="types">
         <button data-mode="mobile" data-width="320">
             <svg class="icon icon-mobile"><use xlink:href="#icon-mobile"></use></svg>
@@ -524,9 +524,9 @@
     // colors
     var colors = ['#3ECC29','#ddd','#afd702','#add8e6','#f03a96'];
 
-    if(localStorage.getItem('main-color')){
-      document.documentElement.style.setProperty(`--main-color`, localStorage.getItem('main-color'));
-    }
+    // if(localStorage.getItem('main-color')){
+    //   document.documentElement.style.setProperty(`--main-color`, localStorage.getItem('main-color'));
+    // }
 
     body.addEventListener('dblclick', function(event) {
       colors = colors.concat(colors.splice(0,1));

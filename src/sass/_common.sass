@@ -42,6 +42,17 @@ a
   +r(375)
     padding-left: 20px
     padding-right: 20px
+
+h3.h3
+  +h3desktop
+  margin-top: 40px
+  margin-bottom: 30px
+  +r(1024)
+    +h3tablet
+  +r(375)
+    +h3mobile
+    margin-top: 30px
+    margin-bottom: 25px
 /* ============================================================================
  * START Product item
  * ============================================================================ */
@@ -221,7 +232,7 @@ h1.breadcrambs-h1
   +h1desktop
   margin-bottom: 100px
   line-height: 1.2
-  +maw(510)
+  +maw(730)
   +r(1024)
     +h1tablet
     max-width: 100%

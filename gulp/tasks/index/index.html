@@ -489,9 +489,9 @@
     // colors
     var colors = ['#3ECC29','#ddd','#afd702','#add8e6','#f03a96'];
 
-    if(localStorage.getItem('main-color')){
-      document.documentElement.style.setProperty(`--main-color`, localStorage.getItem('main-color'));
-    }
+    // if(localStorage.getItem('main-color')){
+    //   document.documentElement.style.setProperty(`--main-color`, localStorage.getItem('main-color'));
+    // }
 
     body.addEventListener('dblclick', function(event) {
       colors = colors.concat(colors.splice(0,1));

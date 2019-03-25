@@ -11,7 +11,8 @@ $('.slick').slick({
   appendDots: '.container.dots',
   pauseOnFocus: false,
   pauseOnHover: false,
-  customPaging: function(slider, i) {
+  customPaging: function() {
+    // slider ,i
     // var thumb = $(slider.$slides[i]).data();
     // return '<a class="dot">' + i + '</a>';
     // return $('<button type="button" />').text(i + 1);
