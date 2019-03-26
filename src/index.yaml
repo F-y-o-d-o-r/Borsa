@@ -11,3 +11,7 @@ PageList:
   ready: 100
 - file: production-page.html
   ready: 100
+- file: news-page.html
+  ready: 10
+- file: news-one-page.html
+  ready: 1
