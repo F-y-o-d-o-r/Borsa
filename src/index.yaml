@@ -15,3 +15,17 @@ PageList:
   ready: 100
 - file: news-one-page.html
   ready: 100
+- file: contacts-page.html
+  ready: 1
+- file: delivery-page.html
+  ready: 0
+- file: job-page.html
+  ready: 0
+- file: map-page.html
+  ready: 0
+- file: terms-page.html
+  ready: 0
+- file: control-page.html
+  ready: 0
+- file: 404-page.html
+  ready: 0
