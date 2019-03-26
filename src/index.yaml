@@ -16,9 +16,9 @@ PageList:
 - file: news-one-page.html
   ready: 100
 - file: contacts-page.html
-  ready: 25
+  ready: 100
 - file: delivery-page.html
-  ready: 0
+  ready: 1
 - file: job-page.html
   ready: 0
 - file: map-page.html
