@@ -6,16 +6,19 @@
   .sort-mobile-btn
     margin-bottom: 40px
     display: none
+    +fm
+    +trans
+    border-radius: 4px
+    &:hover,
+    &:active
+      background-color: $gray2
+      color: #ffffff
     +r(500)
       display: block
   .container.news-wrpaper
     overflow: hidden
     .news
       margin-bottom: 0
-      // +r(1024)
-      //   margin-bottom: 100px
-      // +r(375)
-      //   margin-bottom: 90px
     .more-news
       display: block
       background-color: $black2
@@ -28,12 +31,16 @@
       margin-top: 40px
       margin-bottom: 120px
       width: 290px
+      +trans
       +r(1024)
         margin-bottom: 100px
       +r(375)
         margin-top: 25px
         margin-bottom: 90px
         width: 100%
+      &:hover,
+      &:active
+        background-color: $green1
 .date-chose-wrapper
   display: flex
   margin-bottom: 60px
@@ -49,13 +56,38 @@
     line-height: 50px
     -moz-appearance: none //* Firefox */
     -webkit-appearance: none //* Safari and Chrome */
+    -ms-appearance: none
+    -o-appearance: none
     appearance: none
     background: url(../img/selectarrow.png) no-repeat right #fff
     background-size: 12px
     background-position: 90% 20px
+    &:hover,
+    &:active
+      border: 1px solid $gray2
     option
       +fm
       font-size: 16px
+  .clear
+    display: flex
+    align-items: center
+    cursor: pointer
+    margin-left: 15px
+    +trans
+    font-size: 16px
+    +fm
+    svg
+      margin-right: 20px
+      path
+        +trans
+    &:hover,
+    &:active
+      color: $green1
+      svg
+        path
+          fill: $green1
+  .dnone
+    display: none
 
 .date-chose-wrapper-mobile-popup
   position: fixed
@@ -69,7 +101,7 @@
     position: relative
     background-color: #fff
     max-width: 335px
-    height: 370px
+    min-height: 370px
     margin-left: auto
     margin-right: auto
     flex-direction: column
@@ -90,7 +122,11 @@
       line-height: 1.2
       text-align: center
       width: 100%
+      margin-bottom: 30px
     select
       width: 100%
       margin-left: auto
       margin-right: auto
+      margin-bottom: 20px
+    .clear
+      margin-left: 0

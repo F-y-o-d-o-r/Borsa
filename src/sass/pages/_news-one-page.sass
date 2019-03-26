@@ -1,0 +1,34 @@
+.news-one-page-wrapper
+  .breadcrambs-h1
+    margin-bottom: 0
+  .one-news-wrapper
+    background-color: $gray9
+    padding-top: 60px
+    +r(768)
+      padding-top: 50px
+    .news-wrapper
+      display: flex
+      flex-direction: row
+      .back
+        a
+          min-width: 290px
+          display: flex
+          align-items: center
+          .img
+            width: 30px
+            height: 30px
+            background-color: $green2
+            margin-right: 15px
+            border-radius: 50px
+            display: flex
+            position: relative
+            &:before
+              position: absolute
+              top: 9px
+              left: 11px
+              content: url(../img/backtonews.svg)
+      .content
+        h3.h3
+          +fm
+          font-size: 36px
+          line-height: 1.2
