@@ -1,7 +1,7 @@
 .job-page-wrapper
   .breadcrambs-h1
     margin-bottom: 0
-  .contacts-wrapper
+  .job-wrapper
     padding-top: 60px
     padding-bottom: 120px
     +r(1024)
@@ -9,3 +9,37 @@
     +r(375)
       padding-bottom: 60px
       padding-top: 40px
+    .content-wrapper
+      padding-left: 220px
+      padding-right: 220px
+      +r(1024)
+        padding-left: 83px
+        padding-right: 83px
+      +r(768)
+        padding-left: 87px
+        padding-right: 87px
+      +r(620)
+        padding-left: 0
+        padding-right: 0
+      a
+        color: $green3
+        +fs
+        font-size: 20px
+        line-height: 1.2
+        margin-bottom: 40px
+        display: flex
+        align-items: center
+        +trans
+        +r(1024)
+          font-size: 18px
+          margin-bottom: 30px
+        +r(375)
+          font-size: 14px
+          margin-bottom: 25px
+        &:hover,
+        &:active
+          color: $gray2
+        img
+          height: 30px
+          width: 30px
+          margin-left: 10px
