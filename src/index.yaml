@@ -14,4 +14,4 @@ PageList:
 - file: news-page.html
   ready: 100
 - file: news-one-page.html
-  ready: 1
+  ready: 100

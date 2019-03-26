@@ -9,11 +9,23 @@
     .news-wrapper
       display: flex
       flex-direction: row
+      +r(1024)
+        flex-direction: column
       .back
         a
           min-width: 290px
           display: flex
           align-items: center
+          text-transform: uppercase
+          +fs
+          line-height: 1.2
+          font-size: 11px
+          color: $gray5
+          +r(1024)
+            margin-bottom: 40px
+            min-width: auto
+          +r(375)
+            margin-bottom: 34px
           .img
             width: 30px
             height: 30px
@@ -28,7 +40,53 @@
               left: 11px
               content: url(../img/backtonews.svg)
       .content
+        padding-right: 180px
+        +r(1024)
+          padding-left: 83px
+          padding-right: 127px
+        +r(768)
+          padding-left: 0
+          padding-right: 0
+        .date
+          +fm
+          font-size: 18px
+          line-height: 1.2
+          color: $gray4
+          margin-bottom: 20px
+          +r(1024)
+            font-size: 16px
+          +r(375)
+            font-size: 14px
         h3.h3
           +fm
           font-size: 36px
           line-height: 1.2
+          margin-top: 0
+          +r(1024)
+            font-size: 24px
+          +r(375)
+            font-size: 16px
+        .text-wrapper
+          +fr
+          font-size: 18px
+          line-height: 1.2
+          color: $black2
+          margin-bottom: 60px
+          +r(1024)
+            font-size: 16px
+          +r(768)
+            margin-bottom: 40px
+          +r(375)
+            font-size: 14px
+            margin-bottom: 30px
+        .run-slider-wrapper
+          +r(1024)
+            margin-bottom: 100px
+          +r(375)
+            margin-bottom: 60px
+          .link-wrapper
+            padding-left: 0
+            padding-right: 0
+            .runSlider
+              width: 100%
+
