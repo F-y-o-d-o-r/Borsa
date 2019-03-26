@@ -58,6 +58,9 @@ $(document).on('click', '#runSlider', function(e) {
       appendArrows: '.hidden-slick-btns-wrapper'
     });
     initPopupSliderDone = true;
+    $('body').addClass('overflow-hidden');
+  } else {
+    $('body').addClass('overflow-hidden');
   }
   // enter nums text
   $('.slick-popup-slider').on('afterChange', function(event, slick, currentSlide) {
@@ -69,6 +72,7 @@ $(document).on('click', '#runSlider', function(e) {
 // close popup
 $('body').on('click', '#closePopup', function() {
   $(this).parent().parent().addClass('dnone');
+  $('body').removeClass('overflow-hidden');
 });
 /* ============================================================================
  * END Popup sliders

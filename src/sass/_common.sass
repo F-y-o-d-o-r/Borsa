@@ -26,6 +26,9 @@ body
   content: ""
   clear: both
 
+.overflow-hidden
+  overflow: hidden
+
 a
   text-decoration: none
   color: #000
@@ -316,7 +319,7 @@ h1.breadcrambs-h1
 /* ============================================================================
  * END 2 image wrapper
  * ============================================================================ */
-   /* ============================================================================
+/* ============================================================================
  * START Slider run
  * ============================================================================ */
 .run-slider-wrapper
@@ -406,4 +409,148 @@ h1.breadcrambs-h1
         margin-top: 20px
 /* ============================================================================
  * END Slider run
+ * ============================================================================ */
+/* ============================================================================
+ * START Slider popup
+ * ============================================================================ */
+.hidden-slider-popup
+  z-index: 100
+  position: fixed
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  background-color: rgba(0, 0, 0, 0.8)
+  padding-top: 120px
+  +r(1024)
+    padding-top: 225px
+  +r(768)
+    padding-top: 290px
+    padding-top: 100px
+  .container
+    position: relative
+  .hidden-slider-wrapper
+    +r(1300)
+      position: relative
+    .slick-popup-slider
+      width: 1080px
+      height: 640px
+      overflow: hidden
+      margin-left: auto
+      margin-right: auto
+      box-sizing: border-box
+      border: 5px solid #ffffff
+      +r(1300)
+        width: 780px
+        height: 460px
+      +r(870)
+        width: 720px
+        height: 420px
+      +r(780)
+        width: 100%
+      +r(500)
+        height: 290px
+      +r(378)
+        height: 190px
+      .slide
+        background-size: auto 100% 
+        background-position: center center
+        background-repeat: no-repeat
+        height: 640px
+        width: 100%
+        +r(1300)
+          width: 780px
+          height: 460px
+        +r(870)
+          width: 720px
+          height: 420px
+        +r(500)
+          width: 100%
+          height: 290px
+        +r(378)
+          height: 190px
+    .hidden-slick-btns-wrapper
+      position: absolute
+      width: 100%
+      height: 70px
+      margin-left: auto
+      margin-right: auto
+      top: 50%
+      transform: translateY(-50%)
+      +r(768)
+        display: none
+    .slick-prev,
+    .slick-next
+      height: 70px
+      width: 70px
+      background-color: #fff
+      border-radius: 50px
+      z-index: 1
+    .slick-next
+      right: 0
+      +r(780)
+        right: 16px
+      &:before
+        content: url('../img/hiddenslidernext.svg')
+        margin-left: 5px
+    .slick-prev
+      left: 0
+      +r(780)
+        left: 16px
+      &:before
+        content: url('../img/hiddensliderbefore.svg')
+        margin-right: 5px
+  .close-popup
+    position: absolute
+    right: 0
+    top: -60px
+    cursor: pointer
+    +r(1300)
+      right: 30px
+      top: -90px
+    +r(375)
+      height: 16px
+      width: 16px
+      top: -60px
+  .hidden-info-wrapper
+    display: flex
+    align-items: center
+    justify-content: space-between
+    color: #ffffff
+    width: 1080px
+    margin-left: auto
+    margin-right: auto
+    margin-top: 20px
+    +r(1300)
+      width: 780px
+    +r(870)
+      width: 720px
+    +r(780)
+      width: 100%
+    +r(768)
+      flex-direction: column-reverse
+      align-items: flex-start
+    p
+      +fm
+      font-size: 16px
+      line-height: 1.2
+      margin-right: 10px
+    .num
+      background-color: #fff
+      color: $black2
+      min-width: 110px
+      height: 40px
+      display: flex
+      align-items: center
+      justify-content: center
+      border-radius: 40px
+      +fm
+      font-size: 16px
+      line-height: 1.2
+      +r(768)
+        margin-bottom: 20px
+      +r(375)
+        font-size: 14px
+/* ============================================================================
+ * END Slider popup
  * ============================================================================ */
