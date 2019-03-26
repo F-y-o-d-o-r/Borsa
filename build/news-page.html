@@ -107,13 +107,40 @@
         <div class="container">
           <p class="breadcrambs">Главная / О компании / Новости</p>
           <h1 class="breadcrambs-h1">Новости и события</h1>
-          <div class="date-chose-wrapper"><select name="date">
-              <option>Год</option>
-              <option>Месяц</option>
-              <option>Все</option>
-            </select></div>
+          <div class="date-chose-wrapper"><select name="date1">
+              <option value="0">Год</option>
+              <option value="1">2019</option>
+              <option value="2">2018</option>
+            </select><select name="date2">
+              <option value="0">Месяц</option>
+              <option value="1">Июль</option>
+              <option value="2">Август</option>
+            </select><select name="date3">
+              <option value="0">Все</option>
+              <option value="1">Что</option>
+              <option value="2">Все</option>
+            </select></div><button class="btn-more sort-mobile-btn">Сортировать</button>
         </div>
       </section>
+      <div class="date-chose-wrapper-mobile-popup dnone">
+        <div class="container">
+          <div class="date-chose-wrapper date-chose-wrapper-mobile"><img src="img/closesort.svg" alt="close">
+            <h4>Сортировать новости</h4><select name="date1">
+              <option value="0">Год</option>
+              <option value="1">2019</option>
+              <option value="2">2018</option>
+            </select><select name="date2">
+              <option value="0">Месяц</option>
+              <option value="1">Июль</option>
+              <option value="2">Август</option>
+            </select><select name="date3">
+              <option value="0">Все</option>
+              <option value="1">Что</option>
+              <option value="2">Все</option>
+            </select>
+          </div>
+        </div>
+      </div>
     </main><!-- variable use example-->
     <!-- partial example-->
     <!-- mixin example-->

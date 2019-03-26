@@ -3,8 +3,34 @@ section.news-page-wrapper
     p.breadcrambs Главная / О компании / Новости
     h1.breadcrambs-h1 Новости и события
     .date-chose-wrapper
-      select(name="date")
-        option Год
-        option Месяц
-        option Все
-    
+      select(name="date1")
+        option(value="0") Год
+        option(value="1") 2019
+        option(value="2") 2018
+      select(name="date2")
+        option(value="0") Месяц
+        option(value="1") Июль
+        option(value="2") Август
+      select(name="date3")
+        option(value="0") Все
+        option(value="1") Что
+        option(value="2") Все
+    button.btn-more.sort-mobile-btn Сортировать
+
+.date-chose-wrapper-mobile-popup.dnone
+  .container
+    .date-chose-wrapper.date-chose-wrapper-mobile
+      img(src="img/closesort.svg", alt="close")
+      h4 Сортировать новости
+      select(name="date1")
+        option(value="0") Год
+        option(value="1") 2019
+        option(value="2") 2018
+      select(name="date2")
+        option(value="0") Месяц
+        option(value="1") Июль
+        option(value="2") Август
+      select(name="date3")
+        option(value="0") Все
+        option(value="1") Что
+        option(value="2") Все

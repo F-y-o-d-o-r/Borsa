@@ -18,3 +18,19 @@ $(document).ready(function() {
 /* ============================================================================
  * END Burger menu
  * ============================================================================ */
+/* ============================================================================
+ * START Sort mobile menu on news page
+ * ============================================================================ */
+$(document).on('click', 'button.btn-more.sort-mobile-btn', function(e) {
+  e.preventDefault();
+  $('.date-chose-wrapper-mobile-popup').removeClass('dnone');
+  $('body').addClass('overflow-hidden');
+});
+$(document).on('click', '.date-chose-wrapper-mobile img', function(e) {
+  e.preventDefault();
+  $('.date-chose-wrapper-mobile-popup').addClass('dnone');
+  $('body').removeClass('overflow-hidden');
+});
+/* ============================================================================
+ * END Sort mobile menu on news page
+ * ============================================================================ */
