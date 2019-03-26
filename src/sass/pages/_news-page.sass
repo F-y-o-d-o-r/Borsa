@@ -8,7 +8,32 @@
     display: none
     +r(500)
       display: block
-
+  .container.news-wrpaper
+    overflow: hidden
+    .news
+      margin-bottom: 0
+      // +r(1024)
+      //   margin-bottom: 100px
+      // +r(375)
+      //   margin-bottom: 90px
+    .more-news
+      display: block
+      background-color: $black2
+      color: #fff
+      +fm
+      font-size: 16px
+      text-align: center
+      margin-left: auto
+      margin-right: auto
+      margin-top: 40px
+      margin-bottom: 120px
+      width: 290px
+      +r(1024)
+        margin-bottom: 100px
+      +r(375)
+        margin-top: 25px
+        margin-bottom: 90px
+        width: 100%
 .date-chose-wrapper
   display: flex
   margin-bottom: 60px
