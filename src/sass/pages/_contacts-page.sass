@@ -1,0 +1,61 @@
+.contacts-page-wrapper
+  .breadcrambs-h1
+    margin-bottom: 0
+  .contacts-wrapper
+    padding-top: 60px
+    padding-bottom: 40px
+    +r(375)
+      padding-top: 40px
+      padding-bottom: 20px
+    .two-col-wrapper
+      display: flex
+      padding-left: 110px
+      padding-right: 220px
+      justify-content: space-between
+      +r(1024)
+        padding-left: 0
+        padding-right: 0
+      +r(630)
+        flex-direction: column
+      .left-part,
+      .right-part
+        p
+          font-size: 20px
+          line-height: 1.2
+          +fr
+          margin-bottom: 20px
+          +r(1024)
+            font-size: 18px
+          +r(375)
+            font-size: 16px
+          span:first-of-type
+            display: inline-block
+            +fm
+            margin-right: 5px
+          a
+            +trans
+            &:hover,
+            &:active
+              color: $green1
+      .left-part
+        min-width: 400px
+        margin-right: 40px
+        +r(1024)
+          min-width: auto
+          flex-shrink: 0
+        +r(630)
+          padding-bottom: 10px
+          border-bottom: 1px solid $gray4
+          margin-bottom: 30px
+          margin-right: 0
+      .right-part
+        +r(1024)
+        p
+          a,
+          span:nth-of-type(2),
+            display: inline-block
+            font-size: 16px
+            margin-top: 10px
+            +r(375)
+              font-size: 14px
+            
