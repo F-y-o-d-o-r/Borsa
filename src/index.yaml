@@ -28,4 +28,4 @@ PageList:
 - file: control-page.html
   ready: 100
 - file: 404-page.html
-  ready: 1
+  ready: 100

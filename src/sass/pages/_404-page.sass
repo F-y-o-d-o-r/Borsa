@@ -1,0 +1,72 @@
+.fzf-page-wrapper
+  margin-top: 80px
+  position: fixed
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  min-height: 100vh
+  background: linear-gradient(0deg, rgba(45, 45, 45, 0.7), rgba(45, 45, 45, 0.7)), url('../img/404.jpg')
+  background-size: cover
+  background-position: center center
+  +r(1300)
+    margin-top: 109px
+  +r(700)
+    margin-top: 71px
+  .content-wrapper
+    h1
+      font-size: 72px
+      color: #ffffff
+      +fs
+      line-height: 1.2
+      margin-bottom: 60px
+      margin-bottom: 5%
+      margin-top: 200px
+      margin-top: 20%
+      +r(1024)
+        font-size: 48px
+        // margin-top: 187px
+        // margin-bottom: 40px
+      +r(375)
+        font-size: 32px
+        // margin-bottom: 30px
+        // margin-top: 170px
+    h3
+      +fm
+      font-size: 24px
+      line-height: 1.2
+      margin-bottom: 60px
+      margin-bottom: 5%
+      +maw(620)
+      color: #ffffff
+      +r(1024)
+        font-size: 16px
+        +maw(540)
+        margin-bottom: 45px
+      +r(680)
+        max-width: 100%
+    .buttons-wrapper
+      display: flex
+      +r(680)
+        flex-direction: column
+      .btn-more
+        height: 60px
+        width: 290px
+        border-radius: 4px
+        border: 1px solid $green1
+        display: flex
+        justify-content: center
+        +fm
+        font-size: 16px
+        +r(375)
+          width: 100%
+      .main
+        background-color: $green1
+        color: #ffffff
+        margin-right: 40px
+        +r(680)
+          margin-right: 0
+          margin-bottom: 30px
+      .prod
+        background-color: transparent
+        color: $green1
