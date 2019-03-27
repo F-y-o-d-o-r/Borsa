@@ -1,0 +1,55 @@
+.map-page-wrapper
+  .breadcrambs-h1
+    margin-bottom: 0
+  .map-wrapper
+    padding-top: 60px
+    padding-bottom: 80px
+    +r(1024)
+      padding-bottom: 60px
+    +r(375)
+      padding-bottom: 60px
+      padding-top: 40px
+    .content-wrapper
+      padding-left: 220px
+      padding-right: 220px
+      +r(1024)
+        padding-left: 155px
+        padding-right: 155px
+      +r(768)
+        padding-left: 115px
+        padding-right: 115px
+      +r(620)
+        padding-left: 28px
+        padding-right: 0
+    ul
+      li
+        +r(375)
+          margin-bottom: 20px
+        &:after
+          display: none
+        &:before
+          background-color: #000
+          height: 8px
+          width: 8px
+        a
+          +fr
+          font-size: 16px
+          color: $green3
+          line-height: 1.2
+          +trans
+          +r(375)
+            font-size: 14px
+          &:hover
+            color: $gray2
+      ul
+        margin-left: 25px
+        li
+          &:before
+            background-color: #ffffff
+            height: 8px
+            width: 8px
+            border: 1px solid #000000
+            
+      li.no
+        &:before
+          display: none

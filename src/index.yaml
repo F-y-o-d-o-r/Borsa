@@ -22,9 +22,9 @@ PageList:
 - file: job-page.html
   ready: 100
 - file: map-page.html
-  ready: 0
+  ready: 100
 - file: terms-page.html
-  ready: 0
+  ready: 1
 - file: control-page.html
   ready: 0
 - file: 404-page.html
