@@ -20,7 +20,7 @@ PageList:
 - file: delivery-page.html
   ready: 100
 - file: job-page.html
-  ready: 1
+  ready: 100
 - file: map-page.html
   ready: 0
 - file: terms-page.html
