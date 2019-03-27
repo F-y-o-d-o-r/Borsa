@@ -300,6 +300,84 @@ header.header
   .line
     width: 1px
     background-color: #E1E1E1
+// START Request menu
+.request-menu-wrapper
+  position: fixed
+  background-color: rgba(0, 0, 0, 0.3)
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  z-index: 100
+  +trans
+  .content-wrapper
+    position: absolute
+    right: 0
+    top: 0
+    bottom: 0
+    width: 850px
+    background-color: #fff
+    padding: 40px 150px 110px 40px
+    overflow: auto
+    transition: right 0.5s ease-in-out
+    +r(1024)
+      padding: 40px
+      width: 657px
+    +r(768)
+      width: 100%
+    +r(375)
+      padding: 20px
+    .close
+      float: right
+      cursor: pointer
+    h6
+      font-size: 24px
+      +fm
+      line-height: 1
+      margin-bottom: 50px
+      +r(1024)
+        font-size: 20px
+      +r(375)
+        font-size: 14px
+        margin-bottom: 40px
+    .contacts-wrapper
+      display: flex
+      justify-content: space-between
+      padding-bottom: 30px
+      margin-bottom: 50px
+      border-bottom: 1px solid $gray7
+      +r(1024)
+        margin-bottom: 40px
+      +r(500)
+        flex-direction: column
+      a
+        color: $gray2
+        +fm
+        font-size: 20px
+        line-height: 1
+        +r(1024)
+          font-size: 18px
+        +r(375)
+          font-size: 16px
+      a:first-of-type
+        color: $gray2
+        +r(500)
+          margin-bottom: 20px
+      a:last-of-type
+        color: $green3
+    .form-wrapper
+      form
+        padding-left: 0
+        padding-right: 0
+      .form-footer
+        flex-direction: column
+        align-items: flex-start
+        .checkbox-wrapper
+          margin-bottom: 40px
+.request-menu-wrapper
+  .content-wrapper-hidden
+    right: -100%
+// END Request menu
 /* ============================================================================
  * HEADER END
  * ============================================================================ */
@@ -468,4 +546,67 @@ footer.footer
         margin-top: 30px
 /* ============================================================================
  * FOOTER END
+ * ============================================================================ */
+/* ============================================================================
+ * START Popup
+ * ============================================================================ */
+.popup-wrapper
+  background-color: rgba(0, 0, 0, 0.3)
+  position: fixed
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  z-index: 100
+  .content-wrapper
+    width: 700px
+    min-height: 410px
+    margin-left: auto
+    margin-right: auto
+    background-color: #fff
+    border-radius: 4px
+    margin-top: 260px
+    padding: 40px 40px 60px
+    position: relative
+    +r(1300)
+      width: 626px
+      min-height: auto
+    +r(768)
+      width: 100%
+    +r(375)
+      padding: 20px 20px 30px
+    .close
+      float: right
+      cursor: pointer
+    .mail
+      margin-left: 50%
+      transform: translateX(-50%)
+      margin-top: 36px
+      margin-bottom: 20px
+      +r(1024)
+        margin-bottom: 30px
+      +r(1024)
+        margin-bottom: 20px
+    h4
+      text-align: center
+      +fm
+      font-size: 36px
+      line-height: 1.2
+      margin-bottom: 20px
+      +r(1024)
+        font-size: 24px
+        margin-bottom: 30px
+      +r(375)
+        font-size: 20px
+        margin-bottom: 20px
+    p 
+      +fr
+      font-size: 18px
+      line-height: 1.2
+      color: $black2
+      text-align: center
+      +r(1024)
+        font-size: 14px
+/* ============================================================================
+ * END Popup
  * ============================================================================ */

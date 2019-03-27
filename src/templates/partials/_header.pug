@@ -64,3 +64,27 @@ header.header
               a(href="#", title="menu")= item[0]
 //END Header sub menu
 //END header
+//START Request menu
+.request-menu-wrapper.hidden.visuallyhidden
+  .content-wrapper.content-wrapper-hidden
+    img(src="img/closesort.svg", alt="close").close
+    h6 Свяжитесь с нами или оставьте заявку
+    .contacts-wrapper
+      a(href="tel:+74957674527") +7 495 767 45 27
+      a(href="mailto:sale@borsamsk.ru") sale@borsamsk.ru
+    .form-wrapper
+      form
+        .inputs-wrapper
+          input(type="text", name="name", placeholder="Ваше имя", required="true")
+          input(type="email", name="name", placeholder="Ваш E-mail", required="true")
+          input(type="number", name="name", placeholder="Ваш телефон", required="true")
+        textarea(name="message", placeholder="Сообщение", required="true")
+        footer.form-footer
+          .checkbox-wrapper
+            label
+              input(type="checkbox").checkbox
+              span.checkbox-custom
+              span.label Я принимаю 
+                a(href="#", title="title", target="_blank") условия передачи информации
+          button(type="submit").btn-more Отправить сообщение
+//END Request menu
