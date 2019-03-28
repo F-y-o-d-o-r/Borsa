@@ -167,10 +167,30 @@ header.header
     margin-bottom: 90px
     +r(768)
       margin-bottom: 238px
+    +r(700)
+      margin-bottom: 70px
     +r(500)
       height: auto
-      margin-bottom: 80px
-    // +r(375)
+  .btn-left-order-mobile
+    background-color: $green1
+    color: #fff
+    +fm
+    font-size: 15px
+    border-radius: 2px
+    height: 40px
+    padding: 0 30px
+    margin-left: 50%
+    transform: translateX(-50%)
+    display: none
+    margin-bottom: 50px
+    +trans
+    +r(700)
+      display: block
+    +r(460)
+      width: 100%
+    &:hover,
+    &:active
+      background-color: $green5
   .left-part
     +r(500)
       padding-bottom: 20px
