@@ -64,9 +64,19 @@
         background-color: $green1
         color: #ffffff
         margin-right: 40px
+        +trans
         +r(680)
           margin-right: 0
           margin-bottom: 30px
+        &:hover,
+        &:active
+          background-color: $green5
+          border: 1px solid $green5
       .prod
         background-color: transparent
         color: $green1
+        &:hover,
+        &:active
+          color: #ffffff
+          background-color: $green5
+          border: 1px solid $green5

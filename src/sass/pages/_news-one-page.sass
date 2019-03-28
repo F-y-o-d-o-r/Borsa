@@ -21,6 +21,7 @@
           line-height: 1.2
           font-size: 11px
           color: $gray5
+          +trans
           +r(1024)
             margin-bottom: 40px
             min-width: auto
@@ -34,11 +35,17 @@
             border-radius: 50px
             display: flex
             position: relative
+            +trans
             &:before
               position: absolute
               top: 9px
               left: 11px
               content: url(../img/backtonews.svg)
+          &:hover,
+          &:active
+            color: $gray2
+            .img
+              background-color: $green1
       .content
         padding-right: 180px
         +r(1024)
