@@ -500,15 +500,39 @@ h1.breadcrambs-h1
       +r(780)
         right: 16px
       &:before
-        content: url('../img/hiddenslidernext.svg')
-        margin-left: 5px
+        content: ''
+        background-image: url('../img/hiddenslidernext.png')
+        background-size: cover
+        background-position: center center
+        background-repeat: no-repeat
+        height: 27px
+        width: 14.44px
+        right: 25px
+        top: 22px
+        position: absolute
+        +trans
+      &:hover
+        &:before
+          background-image: url('../img/hiddenslidernextgreen.png')
     .slick-prev
       left: 0
       +r(780)
         left: 16px
       &:before
-        content: url('../img/hiddensliderbefore.svg')
-        margin-right: 5px
+        content: ''
+        background-image: url('../img/hiddensliderbefore.png')
+        background-size: cover
+        background-position: center center
+        background-repeat: no-repeat
+        height: 27px
+        width: 14.44px
+        right: 30px
+        top: 22px
+        position: absolute
+        +trans
+      &:hover
+        &:before
+          background-image: url('../img/hiddensliderbeforegreen.png')
   .close-popup
     position: absolute
     right: 0
