@@ -282,7 +282,7 @@ header.header
 // END Header burger menu
 // START Header submenu
 .header-submenu-wrapper
-  position: fixed
+  position: absolute
   background-color: #fff
   margin-top: 20px
   border-radius: 7px
@@ -320,6 +320,49 @@ header.header
   .line
     width: 1px
     background-color: #E1E1E1
+// wp
+.menu-item-has-children
+  &>a
+    
+header.header .header-wrapper.flex
+  ul.sub-menu
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    position: absolute
+    background-color: #fff
+    // margin-top: 20px
+    border-radius: 7px
+    margin-left: 50%
+    transform: translateX(-50%)
+    padding: 47px 40px 17px
+    z-index: 100
+    width: 700px
+    max-height: 50vh
+    overflow: auto
+    +trans
+    display: none
+    +r(1300)
+      display: none
+    li
+      height: auto
+      width: 50%
+      a
+        +fm
+        font-size: 16px
+        color: $gray1
+        text-transform: none
+        height: auto
+        line-height: 1
+        border-bottom: none
+        +trans
+        margin-bottom: 30px
+        &:hover
+          color: $green1
+.wrap-sub-menu
+  background-color: transparent
+  padding-top: 20px
+  width: 100px
 // START Request menu
 .request-menu-wrapper
   position: fixed

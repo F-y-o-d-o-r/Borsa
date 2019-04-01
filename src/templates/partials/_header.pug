@@ -19,6 +19,36 @@ header.header
         for item in headermenu
           li
             a(href="#", title="menu")= item
+      //- ul.flex
+      //-   li 
+      //-     a(href="#", title="menu") test
+      //-   li.menu-item-has-children
+      //-     a(href="#", title="menu") test
+      //-     //START Header sub menu
+      //-     ul.sub-menu
+      //-       li
+      //-         a(href="#", title="menu") Строповые мягкие контейнеры
+      //-       li
+      //-         a(href="#", title="menu") Вентиляционные мягкие контейнеры (Овощные)
+      //-       li
+      //-         a(href="#", title="menu") Строповые мягкие контейнеры
+      //-       li
+      //-         a(href="#", title="menu") Вентиляционные мягкие контейнеры (Овощные)
+      //-       li
+      //-         a(href="#", title="menu") Строповые мягкие контейнеры
+      //-       li
+      //-         a(href="#", title="menu") Вентиляционные мягкие контейнеры (Овощные)
+      //-       li
+      //-         a(href="#", title="menu") Строповые мягкие контейнеры
+      //-       li
+      //-         a(href="#", title="menu") Вентиляционные мягкие контейнеры (Овощные)
+      //-       li
+      //-         a(href="#", title="menu") Вентиляционные мягкие контейнеры (Овощные)
+      //-       li
+      //-         a(href="#", title="menu") Строповые мягкие контейнеры
+      //-       li
+      //-         a(href="#", title="menu") Вентиляционные мягкие контейнеры (Овощные)
+          //END Header sub menu
     a(href="tel: +79689696960", title="phone number").tel.header-tel +7 968 96 96 96 0
     button.btn-main#leftOrder Оставить заявку
 //BEGIN Header burger menu
@@ -49,21 +79,21 @@ header.header
     a(href="#", title="Пользовательское соглашение").terms Пользовательское соглашение
     p.rights © 2019 Борса. Все права защищены.
 //END Header burger menu
-//START Header sub menu
-.header-submenu-wrapper.dnone
-  .submenu-wrapper
-      ul.flex.left-part
-        for item in submenu
-          if item[1] === true
-            li
-              a(href="#", title="menu")= item[0]
-      .line
-      ul.flex.right-part
-        for item in submenu
-          if item[1] !== true
-            li
-              a(href="#", title="menu")= item[0]
-//END Header sub menu
+//- //START Header sub menu
+//- .header-submenu-wrapper.dnone
+//-   .submenu-wrapper
+//-       ul.flex.left-part
+//-         for item in submenu
+//-           if item[1] === true
+//-             li
+//-               a(href="#", title="menu")= item[0]
+//-       .line
+//-       ul.flex.right-part
+//-         for item in submenu
+//-           if item[1] !== true
+//-             li
+//-               a(href="#", title="menu")= item[0]
+//- //END Header sub menu
 //END header
 //START Request menu
 .request-menu-wrapper.hidden.visuallyhidden

@@ -66,3 +66,24 @@ $(document).on('click', '.request-menu-wrapper .close', function() {
 /* ============================================================================
  * END Request menu
  * ============================================================================ */
+/* ============================================================================
+ * START Header Submenu
+ * ============================================================================ */
+$('header.header nav ul li').hover(
+  function() {
+    // mouse enter
+    // $(this).find(' > .wrap-sub-menu').css('display', 'flex'); // display immediate child
+    $(this).find(' >.wrap-sub-menu .sub-menu').css('display', 'flex'); // display immediate child
+  },
+  function() {
+    // mouse leave
+    // if (!$(this).hasClass('current_page_item')) {
+    // check if current page
+    $(this).find('.sub-menu').css('display', 'none'); // hide if not current page
+    // }
+  }
+);
+$('.sub-menu').wrap('<div class="wrap-sub-menu">');
+/* ============================================================================
+ * END Header Submenu
+ * ============================================================================ */
