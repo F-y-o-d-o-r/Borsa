@@ -530,6 +530,9 @@ header.header .header-wrapper.flex
           margin-left: 0
         +r(800)
           margin-bottom: 40px
+        p
+          display: flex
+          max-width: 440px
         input
           font-size: 14px
           +fm
@@ -537,7 +540,10 @@ header.header .header-wrapper.flex
           text-indent: 30px
           +r(385)
             text-indent: 20px
-        .btn
+        input[type='tel']
+          width: 100%
+        .btn,
+        input[type='submit']
           background-color: #fff
           height: 40px
           padding-right: 30px
@@ -547,6 +553,8 @@ header.header .header-wrapper.flex
           +fm
           +r(385)
             padding-right: 20px
+        input[type='submit']
+          padding-right: 45px
 // END Connect
 footer.footer
   padding: 50px 0 30px
