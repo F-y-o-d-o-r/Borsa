@@ -83,7 +83,17 @@ $('header.header nav ul li').hover(
     // }
   }
 );
-$('.sub-menu').wrap('<div class="wrap-sub-menu">');
+$('header.header nav ul li .sub-menu').wrap('<div class="wrap-sub-menu">');
 /* ============================================================================
  * END Header Submenu
+ * ============================================================================ */
+/* ============================================================================
+ * START .burger-menu-wrapper submenu
+ * ============================================================================ */
+$(document).on('click', '.burger-menu-wrapper li.product > a', function(e) {
+  e.preventDefault();
+  $('.burger-menu-wrapper .product').toggleClass('opened');
+});
+/* ============================================================================
+ * END .burger-menu-wrapper submenu
  * ============================================================================ */

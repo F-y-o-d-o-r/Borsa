@@ -163,7 +163,7 @@ header.header
       margin: 15px auto
       padding: 0 20px
   .nav-wrapper
-    height: 380px
+    min-height: 380px
     margin-bottom: 90px
     +r(768)
       margin-bottom: 238px
@@ -196,6 +196,37 @@ header.header
       padding-bottom: 20px
       margin-bottom: 20px
       border-bottom: 1px solid $gray6
+    li.product
+      position: relative
+      &>a
+        &:after
+          position: absolute
+          content: ''
+          right: -30px
+          top: 7px
+          background-image: url('../img/mobilesubmenutoopen.svg')
+          width: 12px
+          height: 5.21px
+    li.product.opened
+      margin-bottom: 0
+      &>a
+        &:after
+          position: absolute
+          content: ''
+          right: 0
+          top: 7px
+          background-image: url('../img/mobilesubmenutoclose.svg')
+          width: 12px
+          height: 5.21px
+      ul.sub-menu
+        display: block
+    ul.sub-menu
+      display: none
+      padding-left: 43px
+      a
+        +fm
+        font-size: 13px
+        line-height: 1.45
   nav
     display: flex
     justify-content: space-between
@@ -234,8 +265,9 @@ header.header
         margin-right: 20px
         vertical-align: -5px
   .line
+    min-height: 380px
     width: 1px
-    height: 100%
+    // height: 100%
     background-color: #E1E1E1
     +r(500)
       display: none
