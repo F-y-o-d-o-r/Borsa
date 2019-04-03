@@ -21,6 +21,8 @@
       margin-bottom: 0
     .btn-more-wrapper
       display: flex
+      +r(700)
+        flex-direction: column
     .more-news
       display: block
       background-color: $black2
@@ -37,9 +39,11 @@
       +trans
       +r(1024)
         margin-bottom: 100px
+      +r(700)
+        margin-bottom: 50px
       +r(375)
         margin-top: 25px
-        margin-bottom: 90px
+        // margin-bottom: 90px
         width: 100%
       &:hover,
       &:active
