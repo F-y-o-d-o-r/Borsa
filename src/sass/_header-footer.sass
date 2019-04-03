@@ -222,16 +222,17 @@ header.header
           &:hover
             color: $green1
   .price-list
-    &:before
-      content: ' ';
-      background-image: url('../img/footer-pdf-black.svg')
-      height: 20px
-      width: 20px
-      background-size: 20px 20px
-      background-repeat: no-repeat
-      display: inline-block
-      margin-right: 20px
-      vertical-align: -5px
+    a
+      &:before
+        content: ' ';
+        background-image: url('../img/footer-pdf-black.svg')
+        height: 20px
+        width: 20px
+        background-size: 20px 20px
+        background-repeat: no-repeat
+        display: inline-block
+        margin-right: 20px
+        vertical-align: -5px
   .line
     width: 1px
     height: 100%
@@ -550,18 +551,19 @@ footer.footer
       &:last-of-type
         margin-right: 0
   .price-list
-    border-left: 1px solid #ffffff
-    padding-left: 20px
-    &:before
-      content: ' ';
-      background-image: url('../img/footer-pdf.svg')
-      height: 20px
-      width: 20px
-      background-size: 20px 20px
-      background-repeat: no-repeat
-      display: inline-block
-      margin-right: 20px
-      vertical-align: -5px
+    a
+      border-left: 1px solid #ffffff
+      padding-left: 20px
+      &:before
+        content: ' ';
+        background-image: url('../img/footer-pdf.svg')
+        height: 20px
+        width: 20px
+        background-size: 20px 20px
+        background-repeat: no-repeat
+        display: inline-block
+        margin-right: 20px
+        vertical-align: -5px
   .row.flex
     justify-content: space-between
     align-items: center
