@@ -471,8 +471,24 @@ header.header .header-wrapper.flex
       border-bottom: 1px solid $gray7
       +r(1024)
         margin-bottom: 40px
-      +r(500)
+      +r(600)
         flex-direction: column
+      .tel-wrapper
+        +r(600)
+          margin-bottom: 15px
+        +r(450)
+          display: flex
+          flex-direction: column
+        a
+          color: $gray2!important
+          font-size: 17px
+          &:first-of-type
+            margin-right: 20px
+            padding-right: 20px
+            border-right: 1px solid $gray5
+            +r(450)
+              margin-bottom: 15px
+              border-right: none
       a
         color: $gray2
         +fm
@@ -482,10 +498,6 @@ header.header .header-wrapper.flex
           font-size: 18px
         +r(375)
           font-size: 16px
-      a:first-of-type
-        color: $gray2
-        +r(500)
-          margin-bottom: 20px
       a:last-of-type
         color: $green3
         +trans
