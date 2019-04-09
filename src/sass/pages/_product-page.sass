@@ -10,6 +10,8 @@
     padding-bottom: 60px
   +r(600)
     padding-bottom: 40px
+  .breadcrambs-h1
+    padding-bottom: 11px
   .container
     hr
       margin-left: 110px
@@ -144,14 +146,17 @@
         font-size: 14px
       &:after
         border: 1px solid $gray5
+        top: 6px
       &:before
         display: none
     li.active
       color: $green1
       &:after
-        border: 1px solid $green1
+        border: 1px solid $gray5
       &:before
+        top: 10px
         display: block
+
   h3
     +fm
     font-size: 24px

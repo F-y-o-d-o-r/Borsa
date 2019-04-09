@@ -43,7 +43,12 @@ header.header
     nav
       +r(1300)
         display: none
-    a.tel.header-tel
+    a.tel
+      font-size: 17px
+      line-height: 1
+      &:first-of-type
+        margin-bottom: 10px
+    .phones-wrapper
       +r(1300)
         display: none
     ul
@@ -162,6 +167,27 @@ header.header
     +r(500)
       margin: 15px auto
       padding: 0 20px
+    .mobile-phone-wrapper
+      display: flex
+      justify-content: space-between
+      margin-bottom: 40px
+      +r(500)
+        flex-direction: column
+        max-width: 227px
+        margin-left: auto
+        margin-right: auto
+      a
+        font-size: 17px
+        margin-bottom: 0
+        width: 50%
+        +r(500)
+          width: 100%
+          justify-content: flex-start
+        &:first-of-type
+          margin-bottom: 10px
+      .phone-line
+        min-height: 100%
+        margin-right: -5px
   .nav-wrapper
     min-height: 380px
     margin-bottom: 90px
@@ -235,6 +261,7 @@ header.header
       flex-direction: column
     ul
       max-width: 167px
+      // max-width: 50%
       flex-direction: column
       +r(500)
         +maw(227)
@@ -267,7 +294,7 @@ header.header
   .line
     min-height: 380px
     width: 1px
-    // height: 100%
+    margin-right: 15px
     background-color: #E1E1E1
     +r(500)
       display: none
@@ -461,6 +488,9 @@ header.header .header-wrapper.flex
           margin-bottom: 20px
       a:last-of-type
         color: $green3
+        +trans
+        &:hover
+          color: $gray2
     .form-wrapper
       form
         padding-left: 0
@@ -625,7 +655,12 @@ footer.footer
       +r(768)
         font-size: 12px
     .social-wrapper
+      position: absolute
+      left: 50%
+      transform: translateX(-50%)
       +r(700)
+        position: static
+        transform: translateX(0)
         order: 1
         margin-bottom: 40px
       a
