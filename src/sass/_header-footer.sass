@@ -166,14 +166,15 @@ header.header
     margin: 60px auto 90px
     +r(500)
       margin: 15px auto
-      padding: 0 20px
+      padding: 0 60px
+    +r(400)
+      padding: 20px!important
     .mobile-phone-wrapper
       display: flex
       justify-content: space-between
       margin-bottom: 40px
       +r(500)
         flex-direction: column
-        max-width: 227px
         margin-left: auto
         margin-right: auto
       a
@@ -203,7 +204,7 @@ header.header
     +fm
     font-size: 15px
     border-radius: 2px
-    height: 40px
+    height: 50px
     padding: 0 30px
     margin-left: 50%
     transform: translateX(-50%)
@@ -212,7 +213,7 @@ header.header
     +trans
     +r(700)
       display: block
-    +r(460)
+    +r(500)
       width: 100%
     &:hover,
     &:active
@@ -261,12 +262,9 @@ header.header
       flex-direction: column
     ul
       max-width: 167px
-      // max-width: 50%
       flex-direction: column
       +r(500)
-        +maw(227)
-        width: 227px
-        margin: 0 auto
+        max-width: 100%
       li
         margin: 30px 0
         +r(500)
@@ -307,6 +305,8 @@ header.header
     display: flex
     justify-content: center
     margin-bottom: 46px
+    +r(500)
+      justify-content: flex-start
     +r(375)
       margin-bottom: 35px
     a
@@ -320,11 +320,15 @@ header.header
     color: $gray3
     font-size: 13px
     margin-bottom: 35px
+    +r(500)
+      text-align: left
   .rights
     text-align: center
     display: block
     color: $gray3
     font-size: 13px
+    +r(500)
+      text-align: left
 .burger-menu-wrapper.open
   top: 109px
   bottom: 0
